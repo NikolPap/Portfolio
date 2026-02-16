@@ -1,41 +1,182 @@
-@font-face {
-  font-family: 'MyFont';
-  src: url('./assets/fonts/Karla-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'MyFont';
-  src: url('./assets/fonts/Karla-Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+body {
+    font-family: 'Fira Code', sans-serif;
+    background-color: #0a0a0a;
+    color:#D9D9D9;
+    overflow-x: hidden;
 }
 
-@font-face {
-  font-family: 'MyFont';
-  src: url('./assets/fonts/Karla-Medium.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle at top right, #1a3c36 0%, #0a0a0a 60%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@font-face {
-  font-family: 'MyFont';
-  src: url('./assets/fonts/FiraCode-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@font-face {
-  font-family: 'MyFont';
-  src: url('./assets/fonts/FiraCode-Bold.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
-@font-face {
-  font-family: 'MyFont';
-  src: url('./assets/fonts/FiraCode-Medium.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+.lang-switch {
+    background: rgba(255,255,255,0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.logo {
+    font-weight: bold;
+    text-align: right;
+    line-height: 1;
+}
+
+#logo-icon {
+  height: 50px;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: 'Karla', sans-serif;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-family: 'Karla', sans-serif;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border: 1px solid rgba(255,255,255,0.4);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.sidebar-right {
+    position: absolute;
+    right: 40px;
+    bottom: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.email {
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.social-vector {
+  width: 1px;
+  height: 186px;
+}
+
+.scroll-down {
+    position: absolute;
+    left: 60px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow {
+    border: 1px solid #444;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 1px;
+    height: 240px;
+}
+
+.marquee {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(5.300000190734863px);
+    padding: 15px 0;
+    overflow: hidden;
+    transform: rotate(-3deg); 
+}
+
+.marquee-content {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+    font-size: 20px;
+    color: #1aedb0;
+}
+
+.marquee-content span {
+    padding: 0 20px;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
