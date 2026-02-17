@@ -12,8 +12,7 @@ body {
 }
 
 .hero {
-  
-    height: 100vh;
+   height: 100vh;
     width: 100%;
     background-image: url(./assets/img/12.\ Skill\ set\ Background.png);
     background-position: center;
@@ -41,10 +40,85 @@ body {
     gap: 40px;
 }
 
+.lang-switch-container {
+    width: 124px;
+    height: 182px;
+    padding: 20px;
+    border: 1px dashed #8a2be2; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .lang-switch {
-    padding: 5px 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 84px;
+    height: 28px;
     border-radius: 20px;
+    cursor: pointer;
     border: 1px solid #3DCFB6;
+    transition: border-color 0.2s ease;
+}
+
+.lang-switch:hover {
+    border-color: #ffffff;
+    transition: border-color 0.3s ease 0.5s;
+}
+
+.toggle-bg {
+    position: absolute;
+    top: -1px;
+    left: -1px; 
+    width: 44px; 
+    height: 28px;
+    background-color: #3DCFB6;
+    border-radius: 18px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+
+.lang-switch.de-active .toggle-bg {
+    transform: translateX(40px);
+}
+
+.lang-btn {
+    flex: 1;
+    z-index: 2;
+    text-align: center;
+    font-size: 16px;
+   
+    color: #3DCFB6;
+    transition: color 0.3s;
+    user-select: none;
+}
+
+.lang-btn.active {
+    color: white;
+    font-weight: bold;
+}
+
+
+.lang-switch:hover .lang-btn:not(.active) {
+      animation: textBrighten 0.8s forwards; 
+}
+
+@keyframes borderFlash {
+    0% { border-color: #3DCFB6; }   
+    20% { border-color: transparent; } 
+    80% { border-color: transparent; } 
+    100% { border-color: #ffffff; }  
+}
+@keyframes textBrighten {
+    0% { color: #3DCFB680; }   
+    80% { color: #3DCFB680; }  
+    100% { color: #3DCFB6; }   
+}
+
+.lang-switch:hover {
+    animation: borderFlash 0.8s forwards;
 }
 
 .nav-links {
@@ -59,6 +133,38 @@ body {
     color: #ccc;
     text-decoration: none;
     font-size: 20px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px; 
+    transform: translateX(-50%) scale(0);
+    width: 8px; 
+    height: 8px;
+    background-image: url('./assets/img/radio_button_unchecked.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s ease;
+}
+
+
+.nav-links a:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) scale(1); 
+}
+
+.nav-links a.active {
+    color: #3DCFB6;
+}
+
+.nav-links a.active::after {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
 }
 
 .logo {
@@ -73,6 +179,50 @@ body {
 
 #logo-icon:hover {
     content: url("./assets/img/logoHover.png");
+}
+
+
+.social-icons a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 35px; 
+    height: 35px;
+}
+
+
+.github-icon, .linkedin-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain; 
+    display: block;
+}
+
+.social-icons a::after {
+    content: "";
+    position: absolute;
+    right: -15px; 
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    width: 8px;
+    height: 8px;
+    background-image: url("./assets/img/radio_button_unchecked.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+
+
+.social-icons a:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+}
+
+.linkedin-icon  {
+    margin-bottom: 5px;
 }
 
 .github-icon:hover {
@@ -101,7 +251,7 @@ h1 {
 
 .cta-buttons {
     display: flex;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
 }
 
@@ -165,10 +315,15 @@ h1 {
     font-family: 'Karla', sans-serif;
 }
 
+.email:hover {
+    color: #3DCFB6;
+}
+
 .social-icons {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 12px;
 } 
 
 .social-vector {
@@ -184,6 +339,7 @@ h1 {
     flex-direction: column;
     align-items: center;
 }
+ 
 
 .arrow {
     margin-bottom: 24px;
