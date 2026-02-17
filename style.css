@@ -125,25 +125,21 @@ h1 {
     transition: 0.3s ease;
 }
 
-/* Το span θα κινείται σαν ταινία */
 .btn-marquee span {
     display: inline-block;
     white-space: nowrap;
     transition: color 0.3s ease;
 }
 
-/* Hover αλλαγή χρώματος */
 .btn-marquee:hover {
     border: 1px solid #3DCFB6;
     color: #3DCFB6;
 }
 
-/* Κίνηση σαν ταινία */
 .btn-marquee:hover span {
     animation: marqueeText 2s linear infinite;
 }
 
-/* Κίνηση από αριστερά προς δεξιά και ξαναμπαίνει */
 @keyframes marqueeText {
     0% {
         transform: translateX(100%);
