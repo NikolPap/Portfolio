@@ -372,7 +372,7 @@ h1 {
     0%, 49% { opacity: 1; }
     50%, 100% { opacity: 0; }
 }
-Φ
+
 @keyframes toggleImg2 {
     0%, 49% { opacity: 0; }
     50%, 100% { opacity: 1; }
