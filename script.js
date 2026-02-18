@@ -29,3 +29,25 @@ function initializeEventListeners() {
     langToggle.addEventListener("click", handleLanguageToggle);
   }
 }
+
+/**
+ * Activates a permanent grid background effect on first hover.
+ * The effect is applied only once and will not trigger again.
+ *
+ * @param {string} elementId - The ID of the wrapper element.
+ * @param {string} activeClass - The CSS class to apply permanently.
+ */
+function activateOnFirstHover(elementId, activeClass) {
+    const element = document.getElementById(elementId);
+
+    if (!element) return;
+
+    const handleHover = () => {
+        if (!element.classList.contains(activeClass)) {
+            element.classList.add(activeClass);
+        }
+        element.removeEventListener("mouseenter", handleHover);
+    };
+
+    element.addEventListener("mouseenter", handleHover);
+}
