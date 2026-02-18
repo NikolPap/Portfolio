@@ -1,7 +1,7 @@
 :root {
   /* Colors */
   --color-primary: #3dcfb6;
-  --color-bg: #0a0a0a;
+  --color-bg: #1c1c1c;
   --color-text: #d9d9d9;
   --color-white: #ffffff;
   --color-purple-border: #8a2be2;
@@ -30,4 +30,3 @@ h1 {
   margin-bottom: 30px;
   font-family: var(--font-secondary);
 }
-

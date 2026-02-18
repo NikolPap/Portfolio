@@ -7,15 +7,14 @@
 
 .about-container {
   display: flex;
-  align-items: center;
   gap: 96px;
   max-width: 1400px;
   margin: 0 auto;
 }
 
 .about-card {
-  background-color: #0b1a18;
-  padding: 40px;
+  background-color: #3dcfb61a;
+  padding: 35px 25px 0 25px;
   color: var(--color-text);
   border: 1px solid var(--color-primary);
   max-width: 568px;
@@ -26,8 +25,8 @@
 }
 
 .about-title {
-  font-size: 60px;
-  font-family: var(--font-secondary);
+  font-size: 64px;
+  font-family: "Fira Code", sans-serif;
   color: var(--color-primary);
   margin-bottom: 30px;
   font-weight: 700;
@@ -85,7 +84,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 200px;
+  margin-top: 220px;
 }
 
 .who-i-am {
@@ -122,10 +121,12 @@
   display: block;
   border-radius: 20px;
   transition: 0.4s ease;
+  margin-top: 150px;
 }
 
 .image-wrapper.active::before {
   opacity: 1;
+  margin-top: 150px;
 }
 
 .image-wrapper.active img {

@@ -1,0 +1,134 @@
+.skills-section {
+  width: 100%;
+  min-height: 695px;
+  background-image: url("../img/19.\ Skill\ set\ Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  width: 90%;
+}
+
+.skills-left {
+  flex: 1;
+}
+
+.skills-glass-card {
+  background: #3dcfb61a;
+  border: 1.5px solid var(--color-primary);
+  border-radius: 40px;
+  padding: 25px 25px 0 25px;
+  max-width: 520px;
+  height: 503px;
+  backdrop-filter: blur(10px);
+  margin-top: 20px;
+}
+
+.skills-card-title {
+  color: #3dcfb6;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+}
+
+.skills-title {
+  font-size: 64px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.skills-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 46px;
+}
+
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  row-gap: 72px;
+  column-gap: 40px;
+  align-items: start;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  height: auto;
+}
+
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills-btn {
+  justify-content: flex-start !important;
+}
+
+.another-skill {
+  color: var(--color-primary);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.white-letters {
+  color: #ffffff;
+}
+
+.skill-item:hover img {
+  transform: translateY(-3px) scale(1.1);
+}
+
+.skill-item span {
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.growth-mindset .icon-wrapper {
+  position: relative;
+  width: 188px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.growth-mindset .base-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.growth-mindset .hover-icon {
+  position: absolute;
+  top: -110px;
+  left: 40px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.growth-mindset:hover .hover-icon {
+  opacity: 1;
+  transform: translateY(0);
+  width: 188px;
+  height: 129px;
+}
