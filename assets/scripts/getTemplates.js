@@ -2,6 +2,7 @@ function init() {
     renderHero();
     renderAboutme();
     renderSkills();
+    renderProjects();
     initializeEventListeners();
     activateOnFirstHover("imageBox", "active");
 }
@@ -18,4 +19,8 @@ function renderAboutme() {
 
 function renderSkills() {
     document.getElementById("skills").innerHTML = getSkillsTemplate();
+}
+
+function renderProjects() {
+    document.getElementById("projects").innerHTML = getProjectsTemplate();
 }
