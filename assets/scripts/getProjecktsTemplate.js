@@ -8,32 +8,40 @@ function getProjectsTemplate() {
         <div class="projects-list">
             <div class="project-row">
                 <div class="project-info">
-                    <h3 class="project-name">Join</h3>
+                    <h3 class="project-name">Join<img src="assets/img/arrow_outward.png" class="arrow-icon" alt=""></h3>
                 </div>
                 <div class="project-links">
                     <p class="project-tech">Angular <span class="linear">|</span> JavaScript <span class="linear">|</span> HTML <span class="linear">|</span> CSS <span class="linear">|</span> Firebase</p>
                 </div>
+                <div class="project-image-preview">
+            <img src="assets/img/join.png" alt="Join Project">
+        </div>
             </div>
 
             <div class="project-row">
                 <div class="project-info">
-                    <h3 class="project-name">El Pollo Loco</h3>
+                    <h3 class="project-name">El Pollo Loco<img src="assets/img/arrow_outward.png" class="arrow-icon" alt=""></h3>
                 </div>
                 <div class="project-links">
                       <p class="project-tech">JavaScript <span class="linear">|</span> HTML <span class="linear">|</span> CSS</p>
                 </div>
+                <div class="project-image-preview">
+            <img src="assets/img/ElPolloLoco.png" alt="Join Project">
+        </div>
             </div>
+
             <div class="project-row">
                 <div class="project-info">
-                    <h3 class="project-name">DA Bubble</h3>
+                    <h3 class="project-name">DA Bubble<img src="assets/img/arrow_outward.png" class="arrow-icon" alt=""></h3>
                 </div>
                 <div class="project-links">
                       <p class="project-tech">Angular <span class="linear">|</span> Firebase <span class="linear">|</span> Typescript</p>
                 </div>
+                <div class="project-image-preview">
+            <img src="assets/img/DaBubble.png" alt="Join Project">
+        </div>
             </div>
         </div>
-
-        
         </div>
     </div>
     `;
