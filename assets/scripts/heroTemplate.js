@@ -31,60 +31,44 @@ function getheroTemplate() {
         </div>
       </div>
 
-      <div class="sidebar-right">
-        <p class="email">nikoletapapa01@hotmail.com</p>
-        <div class="social-icons">
-          <a href="#" class="social-link"
-            ><img
-              class="github-icon"
-              src="./assets/img/Property 1=GitHub.png"
-              alt="github icon"
-          /></a>
-          <a href="#" class="social-link"
-            ><img
-              class="linkedin-icon"
-              src="./assets/img/Property 1=Linkedin.png"
-              alt="linkedin icon"
-          /></a>
-          <img
-            class="social-vector"
-            src="./assets/img/Vector 1 (1).png"
-            alt="a vector icon"
-          />
+         <div class="hero-wrapper">
+        
+        <div class="sidebar-right">
+          <p class="email">nikoletapapa01@hotmail.com</p>
+          <div class="social-icons">
+            <a href="#" class="social-link">
+                <img class="github-icon" src="./assets/img/Property 1=GitHub.png" alt="github icon"/>
+            </a>
+            <a href="#" class="social-link">
+                <img class="linkedin-icon" src="./assets/img/Property 1=Linkedin.png" alt="linkedin icon"/>
+            </a>
+            <img class="social-vector" src="./assets/img/Vector 1 (1).png" alt="a vector icon"/>
+          </div>
         </div>
-      </div>
 
-      <div class="scroll-down">
-  <div class="arrow">
-    <img
-      class="arrow-img-1"
-      src="./assets/img/Property 1=Bewegung1.png"
-      alt="an arrow image"
-    />
-    <img
-      class="arrow-img-2"
-      src="./assets/img/Property 1=Bewegung.png"
-      alt="an arrow movement"
-    />
-  </div>
-  <div>
-    <img
-      class="line"
-      src="./assets/img/Vector 1.png"
-      alt="a vector img"
-    />
-  </div>
-</div>
+        <div class="scroll-down">
+            <div class="arrow">
+              <img class="arrow-img-1" src="./assets/img/Property 1=Bewegung1.png" alt="an arrow image"/>
+              <img class="arrow-img-2" src="./assets/img/Property 1=Bewegung.png" alt="an arrow movement"/>
+            </div>
+            <div>
+              <img class="line" src="./assets/img/Vector 1.png" alt="a vector img"/>
+            </div>
+        </div>
 
-      <div class="marquee">
-        <div class="marquee-content">
-          <span>Available for remote work • </span>
-          <span>Frontend Developer • </span>
-          <span>Based in Wiesbaden • </span>
-          <span>Open to opportunities • </span>
-          <span>Available for remote work • </span>
-          <span>Frontend Developer • </span>
-          <span>Based in Wiesbaden • </span>
+      </div> 
+     
+
+        <div class="marquee">
+          <div class="marquee-content">
+            <span>Available for remote work • </span>
+            <span>Frontend Developer • </span>
+            <span>Based in Wiesbaden • </span>
+            <span>Open to opportunities • </span>
+            <span>Available for remote work • </span>
+            <span>Frontend Developer • </span>
+            <span>Based in Wiesbaden • </span>
+          </div>
         </div>
       </div>
     `

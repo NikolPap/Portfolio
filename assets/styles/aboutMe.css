@@ -1,15 +1,18 @@
 .about-section {
-  display: flex;
-  justify-content: center;
-  background-color: var(--color-bg);
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-bg);
+    width: 100%;
 }
 
 .about-container {
-  display: flex;
-  gap: 96px;
-  max-width: 1400px;
-  margin: 0 auto;
+    display: flex;
+    gap: 96px;
+    width: 100%;
+    max-width: 1440px; 
+    padding: 0 80px;   
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .about-card {

@@ -8,11 +8,15 @@
   justify-content: center;
 }
 
+
 .skills-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1300px;
-  width: 90%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px; 
+    padding: 0 80px;   
+    margin: 0 auto;    
+    box-sizing: border-box;
 }
 
 .skills-left {
@@ -42,11 +46,11 @@
 }
 
 .skills-right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-top: 46px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start;
+    padding-top: 46px;
 }
 
 .icons-grid {

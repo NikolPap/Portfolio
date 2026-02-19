@@ -41,13 +41,17 @@ h2 {
 .projects-section {
     display: flex;
     background-color: var(--color-bg);
+    justify-content: center;
+    width: 100%;
 }
 
 .projects-container {
-    width: 70%;
-    padding-left: 65px;
+    width: 100%;
+    max-width: 1440px; 
+    padding: 0 80px;   
+    margin: 0 auto;   
+    box-sizing: border-box;
 }
-
 .projects-pre-title {
     color: var(--color-primary);
     font-family: var(--font-primary);
@@ -104,6 +108,7 @@ line-height: 1.6;
 
 .projects-list {
     margin-top: 25px;
+    width: 75%;
 }
 
 .linear {

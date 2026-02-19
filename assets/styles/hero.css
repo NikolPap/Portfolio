@@ -21,13 +21,16 @@
 }
 
 .navbar {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  padding: 30px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 1440px; 
+    padding: 30px 80px;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
 }
 
 .nav-left {
@@ -154,13 +157,25 @@
 }
 
 .sidebar-right {
-  position: absolute;
-  right: 40px;
-  bottom: 7px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+    position: absolute;
+    right: 80px; 
+    bottom: 0;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    pointer-events: auto; 
+}
+
+.hero-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    pointer-events: none; 
 }
 
 .email {
@@ -237,12 +252,13 @@
 }
 
 .scroll-down {
-  position: absolute;
-  left: 60px;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    position: absolute;
+    left: 80px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: auto;
 }
 
 .arrow {
@@ -323,6 +339,7 @@
   padding: 15px 0;
   overflow: hidden;
   transform: rotate(-3deg);
+  max-width: 1440px;
 }
 
 .marquee-content {
@@ -339,3 +356,6 @@
   padding: 0 20px;
 }
 
+.sidebars {
+    display: flex;
+}
