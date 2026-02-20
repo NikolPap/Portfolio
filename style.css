@@ -38,3 +38,202 @@ h2 {
   font-weight: 700;
 }
 
+/* =========================================
+   Colleagues / Testimonials Section
+   ========================================= */
+.colleagues-section {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-bg);
+  width: 100%;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.colleagues-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.colleagues-title {
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: var(--color-primary);
+}
+
+.reviews-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-card-single {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.review-card-single.fade-out {
+    opacity: 0;
+    transform: translateY(20px); 
+}
+.reviews-carousel {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  justify-content: center;
+}
+
+.review-card {
+  border-radius: 30px;
+  padding: 40px;
+  max-width: 674px;
+  width: 100%;
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.active-card {
+  background-color: #3dcfb64d;
+  border: 1px solid var(--color-primary);
+  z-index: 2;
+  transform: scale(1);
+  box-shadow: 0 0 20px rgba(61, 207, 182, 0.1);
+}
+
+.side-card {
+  border: 1px solid var(--color-primary);
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  background-color: #3dcfb61a;
+}
+
+
+.quote-icon {
+  position: absolute;
+  top: -8px;
+  left: -37px;
+  width: 90px;
+  height: auto;
+  padding: 0 10px;
+}
+
+.review-text {
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.review-line {
+    width: 50%;
+    height: 1px;
+    background-color: var(--color-white);
+    margin-right: 16px;
+}
+
+.right-line {
+background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.review-author {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  text-align: right;
+  display: block;
+}
+
+.active-card .review-author {
+  color: var(--color-white);
+}
+
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.left-fade {
+  left: 0;
+  background: linear-gradient(to right, var(--color-bg) 10%, transparent);
+}
+
+.right-fade {
+  right: 0;
+  background: linear-gradient(to left, var(--color-bg) 10%, transparent);
+}
+
+.dots-container {
+  display: flex;
+  gap: 18px;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.active-dot {
+  background-color: var(--color-primary);
+  transform: scale(1.2);
+}
+
+.controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.arrow-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s;
+}
+
+.arrow-btn img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+}
+
+.arrow-btn:hover {
+  transform: scale(1.2);
+}
+
+.arrow-btn:hover .left-hover {
+  content: url("./assets/img/Property 1=Left hover.png");
+}
+
+.arrow-btn:hover .right-hover {
+  content: url("./assets/img/Property 1=right Hover.png");
+}
+
+.line-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

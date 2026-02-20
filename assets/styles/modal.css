@@ -1,14 +1,14 @@
 dialog {
   position: fixed;
-  inset: 0; 
-  margin: auto; 
+  inset: 0;
+  margin: auto;
   border: none;
   border-radius: 30px;
   padding: 0;
-  background: transparent; 
+  background: transparent;
   width: 90%;
-  max-width: 1100px; 
-  max-height: 85vh; 
+  max-width: 1100px;
+  max-height: 85vh;
   overflow: visible;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 }
@@ -95,7 +95,6 @@ dialog::backdrop {
   gap: 20px;
 }
 
-
 .modal-btn:hover {
   border-color: var(--color-primary);
   color: var(--color-primary);
@@ -124,7 +123,6 @@ dialog::backdrop {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
-
 .close-modal-btn {
   display: flex;
   position: absolute;
@@ -138,7 +136,6 @@ dialog::backdrop {
   z-index: 10;
   transition: 0.2s;
 }
-
 
 .next-project {
   position: absolute;
@@ -155,32 +152,31 @@ dialog::backdrop {
 }
 
 .next-project:hover {
-  color: var(--color-white)
+  color: var(--color-white);
 }
 
 .close-modal-btn:hover img {
-    content: url("../img/close.png"); }
-
-.trans-arrow {
-    transition: transform 0.3s ease;
-    display: inline-block;
+  content: url("../img/close.png");
 }
 
+.trans-arrow {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
 
 .modal-btn:hover .trans-arrow {
-    transform: translateX(5px);
+  transform: translateX(5px);
 }
 
 .trans-arrow {
-    transition: transform 0.3s ease;
-    display: inline-block; 
+  transition: transform 0.3s ease;
+  display: inline-block;
 }
 
-.modal-btn:hover .trans-arrow{
-    transform: translate(5px,-5px);
-  
+.modal-btn:hover .trans-arrow {
+  transform: translate(5px, -5px);
 }
 
 .next-project:hover .trans-arrow {
-   transform: translateX(5px);
+  transform: translateX(5px);
 }
