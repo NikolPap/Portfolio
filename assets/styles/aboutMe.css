@@ -46,7 +46,7 @@
   max-width: 568px;
   width: 100%;
   height: 568px;
-  background-size: cover;
+  object-fit: cover;
   border-radius: 30px;
 }
 
