@@ -17,10 +17,10 @@ function getModalDialogTemplate(project, techIconsHtml) {
             
             <div class="modal-buttons">
                 <a href="${project.githubLink}" target="_blank" class="modal-btn btn">
-                    Github <img src="assets/img/arrow_outward2.png" alt"arrow image"> 
+                    Github <img   class="trans-arrow" src="assets/img/arrow_outward2.png" alt"arrow image"> 
                 </a>
                 <a href="${project.liveLink}" target="_blank" class="modal-btn btn">
-                    Live Test <img src="assets/img/arrow_outward2.png" alt"arrow image">
+                    Live Test <img  class="trans-arrow" src="assets/img/arrow_outward2.png" alt"arrow image">
                 </a>
             </div>
         </div>
@@ -32,7 +32,7 @@ function getModalDialogTemplate(project, techIconsHtml) {
         </div>
 
         <div class="next-project" onclick="nextProject()">
-            Next project<img src="assets/img/arrow_forward.png" alt"arrow image">
+            Next project<img class="trans-arrow" src="assets/img/arrow_forward.png" alt"arrow image">
         </div>
     </div>
     `
