@@ -36,7 +36,12 @@
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 17px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {

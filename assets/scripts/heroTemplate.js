@@ -1,20 +1,24 @@
 function getheroTemplate() {
     return `
      <nav class="navbar">
-        <div class="nav-left">
-          <div class="lang-switch" id="lang-toggle">
-            <div class="toggle-bg"></div>
-            <span class="lang-btn active" data-lang="en">EN</span>
-            <span class="lang-btn" data-lang="de">DE</span>
+        <div class="navigation">
+          <div class="nav-left">
+            <div class="lang-switch" id="lang-toggle">
+              <div class="toggle-bg"></div>
+              <span class="lang-btn active" data-lang="en">EN</span>
+              <span class="lang-btn" data-lang="de">DE</span>
+            </div>
+            <div>
+            <ul class="nav-links">
+              <li><a href="#about">About me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+            </div>
           </div>
-          <ul class="nav-links">
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-          </ul>
-        </div>
-        <div class="logo">
+           <div class="logo">
           <img id="logo-icon" src="./assets/img/logo.png" alt="a logo icon" />
+        </div>
         </div>
       </nav>
 
