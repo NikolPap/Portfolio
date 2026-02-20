@@ -18,9 +18,9 @@ function renderAboutme() {
 }
 
 function renderSkills() {
-    document.getElementById("skills").innerHTML = getSkillsTemplate();
+    document.getElementById("skills").innerHTML += getSkillsTemplate();
 }
 
 function renderProjects() {
-    document.getElementById("projects").innerHTML = getProjectsTemplate();
+    document.getElementById("projects").innerHTML += getProjectsTemplate();
 }
