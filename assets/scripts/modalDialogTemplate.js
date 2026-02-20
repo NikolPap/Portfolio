@@ -2,7 +2,7 @@ function getModalDialogTemplate(project, techIconsHtml) {
     return `
       <div class="modal-container">
         
-        <button class="close-modal-btn" onclick="closeModal()">×</button>
+        <button class="close-modal-btn" onclick="closeModal()"><img src="assets/img/close_small.png" alt"a close"></button>
 
         <div class="modal-left">
             <div class="project-number">${project.number}</div>
@@ -17,10 +17,10 @@ function getModalDialogTemplate(project, techIconsHtml) {
             
             <div class="modal-buttons">
                 <a href="${project.githubLink}" target="_blank" class="modal-btn btn">
-                    Github ↗
+                    Github <img src="assets/img/arrow_outward2.png" alt"arrow image"> 
                 </a>
                 <a href="${project.liveLink}" target="_blank" class="modal-btn btn">
-                    Live Test ↗
+                    Live Test <img src="assets/img/arrow_outward2.png" alt"arrow image">
                 </a>
             </div>
         </div>
@@ -32,7 +32,7 @@ function getModalDialogTemplate(project, techIconsHtml) {
         </div>
 
         <div class="next-project" onclick="nextProject()">
-            Next project <span class="next-arrow">→</span>
+            Next project<img src="assets/img/arrow_forward.png" alt"arrow image">
         </div>
     </div>
     `

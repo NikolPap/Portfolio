@@ -26,7 +26,7 @@ function getheroTemplate() {
         <p class="subtitle">Frontend Developer</p>
         <h1>Nikoleta Papalazarou</h1>
         <div class="cta-buttons">
-          <a href="#" class="btn btn-outline btn-marquee"
+          <a href="#projects" class="btn btn-outline btn-marquee"
             ><span>Check my work</span></a
           >
           <a href="#" class="btn btn-outline btn-marquee"
