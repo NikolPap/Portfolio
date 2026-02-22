@@ -165,15 +165,6 @@ dialog::backdrop {
 }
 
 .modal-btn:hover .trans-arrow {
-  transform: translateX(5px);
-}
-
-.trans-arrow {
-  transition: transform 0.3s ease;
-  display: inline-block;
-}
-
-.modal-btn:hover .trans-arrow {
   transform: translate(5px, -5px);
 }
 
