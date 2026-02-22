@@ -55,5 +55,9 @@ function activateOnFirstHover(elementId, activeClass) {
     element.addEventListener("mouseenter", handleHover);
 }
 
-
+function toggleSubmitButton() {
+    const checkbox = document.getElementById('privacyCheckbox');
+    const button = document.getElementById('sendButton');
+    button.disabled = !checkbox.checked;
+}
 

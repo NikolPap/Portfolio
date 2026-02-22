@@ -27,6 +27,7 @@ function init() {
     renderSkills();
     renderProjects();
     renderColleagues();
+     renderContact(); 
     initializeEventListeners();
     activateOnFirstHover("imageBox", "active");
 }
@@ -47,6 +48,13 @@ function renderSkills() {
 
 function renderProjects() {
     document.getElementById("projects").innerHTML += getProjectsTemplate();
+}
+
+function renderContact() {
+    const contactSection = document.getElementById("contact");
+    if(contactSection) {
+        contactSection.innerHTML = getContactTemplate();
+    }
 }
 
 
