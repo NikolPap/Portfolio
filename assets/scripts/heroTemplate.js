@@ -29,7 +29,7 @@ function getheroTemplate() {
           <a href="#projects" class="btn btn-outline btn-marquee"
             ><span>Check my work</span></a
           >
-          <a href="#" class="btn btn-outline btn-marquee"
+          <a href="#contact" class="btn btn-outline btn-marquee"
             ><span>Contact me</span></a
           >
         </div>

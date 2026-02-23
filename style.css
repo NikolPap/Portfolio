@@ -129,6 +129,7 @@ h2 {
   resize: none;
   line-height: 1.5;
   font-size: 18px;
+  color: var(--color-white);
 }
 
 .contact-form input::placeholder,
@@ -179,6 +180,14 @@ h2 {
   text-decoration-color: var(--color-primary);
 }
 
+.checkmark-box {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("assets/img/check_box_outline_blank (1).png");
+}
 .custom-checkbox-label {
   display: block;
   position: relative;
@@ -234,4 +243,82 @@ h2 {
 .contact-btn:disabled:hover {
   border-color: #555;
   background: transparent;
+}
+
+.input-group {
+  position: relative;
+  border-top: 1px solid var(--color-primary);
+  padding: 30px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-secondary);
+  resize: none;
+  line-height: 1.5;
+  font-size: 18px;
+  color: var(--color-white);
+  transition: all 0.2s ease;
+}
+
+.error-msg {
+  color: #ec7b7b;
+  font-family: var(--font-secondary);
+  font-size: 18px;
+
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+
+  pointer-events: none;
+  display: none;
+}
+
+.contact-form input.has-error,
+.contact-form textarea.has-error {
+  color: transparent;
+}
+
+.contact-form input.has-error::placeholder,
+.contact-form textarea.has-error::placeholder {
+  color: transparent;
+}
+
+.contact-form input.has-error ~ .error-msg,
+.contact-form textarea.has-error ~ .error-msg {
+  display: block;
+}
+
+.privacy-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+}
+
+.privacy-error-msg {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  font-family: var(--font-secondary);
+  width: max-content;
+  font-size: 14px;
+  color: #ec7b7b;
+
+  visibility: hidden;
+  white-space: nowrap;
+}
+
+.privacy-error-msg.visible {
+  visibility: visible;
 }
