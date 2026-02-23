@@ -24,7 +24,7 @@ function getFooterTemplate() {
                    Email
                 </a>
                 
-                <a href="./legal_notice.html" class="legal-link">Legal Notice</a>
+                <a href="legal-notice.html" class="legal-link">Legal Notice</a>
             </div>
 
         </div>
