@@ -56,9 +56,6 @@ function getContactTemplate() {
                         I've read the <a href="#" class="privacy-link">privacy policy</a> and agree to the processing of my data as outlined.
                     </span>
                 </div>
-    
-                    <span id="privacyError" class="privacy-error-msg"></span>
-            
                     <button type="submit" id="sendButton" class="btn btn-marquee contact-btn" disabled>
                         <span>Say Hello :)</span>
                     </button>

@@ -74,11 +74,6 @@
   width: 100%;
 }
 
-.input-group {
-  border-top: 1px solid var(--color-primary);
-  padding: 30px 0;
-}
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -90,6 +85,7 @@
   line-height: 1.5;
   font-size: 18px;
   color: var(--color-white);
+  transition: all 0.2s ease;
 }
 
 .contact-form input::placeholder,
@@ -115,12 +111,6 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-}
-
-.privacy-container {
-  display: flex;
-  align-items: center;
-  gap: 5px;
 }
 
 .privacy-text {
@@ -207,20 +197,6 @@
   position: relative;
   border-top: 1px solid var(--color-primary);
   padding: 30px 0;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  font-family: var(--font-secondary);
-  resize: none;
-  line-height: 1.5;
-  font-size: 18px;
-  color: var(--color-white);
-  transition: all 0.2s ease;
 }
 
 .error-msg {

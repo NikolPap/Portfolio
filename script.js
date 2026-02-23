@@ -2,31 +2,75 @@
    Initialization Function
    ========================================= */
 function initializeEventListeners() {
-  const navLinks = document.querySelectorAll(".nav-links a");
-  const langToggle = document.getElementById("lang-toggle");
-  const langBtns = document.querySelectorAll(".lang-btn");
+    const navLinks = document.querySelectorAll(".nav-links a");
+    const langToggleDesktop = document.getElementById("lang-toggle-desktop");
+    const langToggleMobile = document.getElementById("lang-toggle-mobile");
+    const langBtns = document.querySelectorAll(".lang-btn");
 
-  function handleNavLinkClick(event) {
-    navLinks.forEach((link) => link.classList.remove("active"));
-    event.currentTarget.classList.add("active");
-  }
+    function handleNavLinkClick(event) {
+        navLinks.forEach((link) => link.classList.remove("active"));
+        event.currentTarget.classList.add("active");
+    }
 
   function handleLanguageToggle() {
-    langToggle.classList.toggle("de-active");
-    langBtns.forEach((btn) => btn.classList.toggle("active"));
-  }
+        if(langToggleDesktop) langToggleDesktop.classList.toggle("de-active");
+        if(langToggleMobile) langToggleMobile.classList.toggle("de-active");
+        langBtns.forEach((btn) => btn.classList.toggle("active"));
 
-  navLinks.forEach((link) => {
-    link.addEventListener("click", handleNavLinkClick);
-  });
+    }
 
-  if (langToggle) {
-    langToggle.addEventListener("click", handleLanguageToggle);
-  }
-  const projectRows = document.querySelectorAll(".project-row");
-  projectRows.forEach((row, index) => {
-    row.addEventListener("click", () => openProjectDialog(index));
-  });
+    navLinks.forEach((link) => {
+        link.addEventListener("click", handleNavLinkClick);
+    });
+
+    if (langToggleDesktop) langToggleDesktop.addEventListener("click", handleLanguageToggle);
+    if (langToggleMobile) langToggleMobile.addEventListener("click", handleLanguageToggle);
+    const hamburger = document.getElementById("hamburger-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            mobileMenu.classList.toggle("open");
+            
+            if (mobileMenu.classList.contains("open")) {
+                document.body.style.overflow = "hidden";
+            } else {
+                document.body.style.overflow = "auto";
+            }
+        });
+    }
+
+    // --- Modal Logic (Existing) ---
+    const projectRows = document.querySelectorAll(".project-row");
+    projectRows.forEach((row, index) => {
+        row.addEventListener("click", () => openProjectDialog(index));
+    });
+}
+
+document.addEventListener('click', function(event) {
+    const mobileMenu = document.getElementById("mobile-menu");
+    const hamburger = document.getElementById("hamburger-btn");
+
+    // Ελέγχουμε αν το μενού είναι ανοιχτό
+    // και αν το κλικ ΔΕΝ έγινε πάνω στο μενού ή στο hamburger
+    if (mobileMenu.classList.contains("open") && 
+        !mobileMenu.contains(event.target) && 
+        !hamburger.contains(event.target)) {
+        
+        closeMobileMenu();
+    }
+});
+
+function closeMobileMenu() {
+    const hamburger = document.getElementById("hamburger-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    
+    if(hamburger && mobileMenu) {
+        hamburger.classList.remove("active");
+        mobileMenu.classList.remove("open");
+        document.body.style.overflow = "auto";
+    }
 }
 
 /**

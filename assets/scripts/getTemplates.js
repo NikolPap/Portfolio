@@ -17,7 +17,7 @@ const reviewsData = [
   },
 ];
 
-let currentReviewIndex = 0; // Ξεκινάμε από το πρώτο (το μεσαίο)
+let currentReviewIndex = 0; 
 
 function init() {
   renderHero();

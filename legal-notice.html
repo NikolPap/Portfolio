@@ -3,47 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- ίδια styles με index -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./assets/styles/fonts.css" />
     <link rel="stylesheet" href="./assets/styles/animations.css" />
     <link rel="stylesheet" href="./assets/styles/hero.css" />
     <link rel="stylesheet" href="./assets/styles/footer.css" />
-
-    <!-- templates -->
     <script src="./assets/scripts/getFooter.js"></script>
     <script src="./assets/scripts/heroTemplate.js"></script>
+    <script src="script.js"></script>
 
     <title>Legal Notice</title>
   </head>
 
   <body class="legal-notice-body" onload="initLegal()">
     <section style="height: auto; padding-bottom: 100px">
-      <nav class="navbar">
-        <div class="navigation">
-          <div class="nav-left">
-            <div class="lang-switch" id="lang-toggle">
-              <div class="toggle-bg"></div>
-              <span class="lang-btn active" data-lang="en">EN</span>
-              <span class="lang-btn" data-lang="de">DE</span>
-            </div>
-            <div>
-              <ul class="nav-links">
-                <li><a href="index.html#about">About me</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-              </ul>
-            </div>
+       <nav class="navbar">
+      <div class="navigation">
+
+        <div class="nav-left desktop-nav">
+          <div class="lang-switch" id="lang-toggle-desktop">
+            <div class="toggle-bg"></div>
+            <span class="lang-btn active" data-lang="en">EN</span>
+            <span class="lang-btn" data-lang="de">DE</span>
           </div>
-          <div class="logo">
-            <img id="logo-icon" src="./assets/img/logo.png" alt="a logo icon" />
+          <div>
+            <ul class="nav-links">
+              <li><a href="index.html#about">About me</a></li>
+              <li><a href="index.html#skills">Skills</a></li>
+              <li><a href="index.html#projects">Projects</a></li>
+            </ul>
           </div>
         </div>
-      </nav>
+        <div class="logo">
+          <img id="logo-icon" src="./assets/img/logo.png" alt="a logo icon" />
+        </div>
+        <div class="hamburger" id="hamburger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-links nav-links">
+                <li><a href="index.html#about" onclick="closeMobileMenu()">About me</a></li>
+                <li><a href="index.html#skills" onclick="closeMobileMenu()">Skills</a></li>
+                <li><a href="index.html#projects" onclick="closeMobileMenu()">Projects</a></li>
+            </ul>
+            
+            <div class="lang-switch mobile-lang-switch" id="lang-toggle-mobile">
+                <div class="toggle-bg"></div>
+                <span class="lang-btn active" data-lang="en">EN</span>
+                <span class="lang-btn" data-lang="de">DE</span>
+            </div>
+        </div>
+    </div>
     </section>
-
-    <!-- Legal Content -->
     <section class="legal-section">
       <div class="legal-container">
         <h1>Legal Notice</h1>
@@ -109,7 +125,7 @@
           Developer Akademie, be liable for any direct, indirect, incidental,
           special, consequential or exemplary damages, including but not limited
           to, damages for loss of profits, goodwill, use, data, or other
-          intangible losses, even if we have been advised of the possibility of
+          intangible lossesa, even if we have been advised of the possibility of
           such damages, arising out of or in connection with the use or
           performance of Portfolio.
         </p>
@@ -135,6 +151,7 @@
     <script>
       function initLegal() {
         document.getElementById("footer").innerHTML = getFooterTemplate();
+         initializeEventListeners();
       }
     </script>
   </body>
