@@ -111,3 +111,8 @@
   transform: translateY(-50%) scale(1);
   left: -15px;
 }
+
+.copyright-text2 {
+  display: none;
+  color: var(--color-primary);
+}

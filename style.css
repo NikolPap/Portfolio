@@ -89,13 +89,11 @@ h2 {
 }
 
 @media (max-width: 1183px) {
-
   .icons-grid {
     grid-template-columns: repeat(3, 70px);
-
   }
 
-  .skills-glass-card  {
+  .skills-glass-card {
     min-height: 580px;
   }
 
@@ -111,10 +109,9 @@ h2 {
     right: -310px;
   }
 
-  .projects-list{
+  .projects-list {
     width: 70%;
   }
-
 }
 
 @media (max-width: 900px) {
@@ -250,7 +247,8 @@ h2 {
 
   .about-image {
     max-width: 368px;
-    height: 368px;}
+    height: 368px;
+  }
 
   body {
     font-size: 16px;
@@ -288,19 +286,27 @@ h2 {
 
   .skills-glass-card {
     max-width: 368px;
-     min-height: 568px;
+    min-height: 568px;
+  }
+
+  .projects-container {
+    padding: 0 20px;
   }
 
   .projects-pre-title {
     font-size: 18px;
   }
 
- .project-image-preview {
-  display: none;
- }
+  .project-image-preview {
+    display: none;
+  }
 
   .projects-list {
     width: 100%;
+  }
+
+  .project-name {
+    padding-left: 0;
   }
 
   .project-row {
@@ -335,7 +341,8 @@ h2 {
     font-size: 20px;
   }
 
-  .contact-form input, .contact-form textarea {
+  .contact-form input,
+  .contact-form textarea {
     font-size: 16px;
   }
 
@@ -343,7 +350,67 @@ h2 {
     padding: 0 20px;
   }
 
+  .copyright-text {
+    display: none;
   }
+
+  .copyright-text2 {
+    display: block;
+    text-align: center;
+    padding-top: 47px;
+  }
+
+  dialog {
+    max-width: 350px;
+  }
+
+  .modal-container {
+    flex-direction: column-reverse;
+  }
+
+  .project-img-wrapper img {
+    margin-top: 70px;
+    height: 216px;
+  }
+
+  .modal-right {
+    padding: 10px;
+  }
+
+  .close-modal-btn {
+    right: 16px;
+  }
+
+  .modal-left {
+    padding: 5px;
+  }
+
+  .project-number {
+    font-size: 70px;
+  }
+
+  .project-title {
+    margin-bottom: 10px;
+  }
+
+  .tech-stack {
+    flex-wrap: wrap;
+  }
+
+  .modal-buttons {
+    padding-bottom: 56px;
+    justify-content: space-evenly;
+  }
+
+  .next-project {
+    bottom: 17px;
+    right: 2px;
+  }
+
+  .legal-section {
+  padding: 80px 20px;
+  }
+}
 
 @media (max-width: 500px) {
   .mobile-menu-content {
@@ -374,27 +441,44 @@ h2 {
   }
 
   .sidebar-right {
-    right: 30px;
+    right: 0px;
   }
 
   .scroll-down {
-    left: 30px;
+    left: 0px;
   }
 
   .icons-grid {
     grid-template-columns: repeat(3, 70px);
   }
 
-    .privacy-error-msg {
+  .privacy-error-msg {
     top: 50px;
+  }
+
+  .footer-logo {
+    height: 36px;
+  }
+
+  .cta-buttons {
+    gap: 7px;
+  }
+
+  .review-card {
+    max-width: 301px;
+  }
+
+  .quote-icon {
+    width: 70px;
+  }
+
+  .review-card {
+    padding: 20px;
   }
 }
 
 @media (max-width: 380px) {
   .icons-grid {
     grid-template-columns: repeat(3, 50px);
-
   }
-
-
 }

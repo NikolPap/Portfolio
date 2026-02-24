@@ -28,6 +28,8 @@ function getFooterTemplate() {
             </div>
 
         </div>
+           <p class="copyright-text2">© Nikoleta Papalazarou 2026</p>
     </div>
+   
     `;
 }
