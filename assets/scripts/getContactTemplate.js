@@ -6,7 +6,9 @@ function getContactTemplate() {
             <h2 class="contact-headline">Let's work<br>together</h2>
             <h3 class="contact-sub-headline">Got a problem to solve?</h3>
             <div class="contact-arrow-container">
-               <p class="contact-text">Need a Frontend developer? <span class="lets-talk-text">Let's talk!</span></p>
+               <p class="contact-text">Encourage people to contact you and describe what role you are interested in. Show that you’ll add value to their projects through your work. 
+
+Need a Frontend developer? Let’s talk!<br><br>Need a Frontend developer? <span class="lets-talk-text">Let's talk!</span></p>
             </div>
         </div>
 
@@ -53,7 +55,7 @@ function getContactTemplate() {
                     </div>
 
                     <span class="privacy-text">
-                        I've read the <a href="#" class="privacy-link">privacy policy</a> and agree to the processing of my data as outlined.
+                       I have read and agree to the <a href="#" class="privacy-link">privacy policy</a>.
                     </span>
                 </div>
                     <button type="submit" id="sendButton" class="btn btn-marquee contact-btn" disabled>

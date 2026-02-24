@@ -61,6 +61,7 @@ function getheroTemplate() {
       <div class="sidebar-right">
         <p class="email">nikoletapapa01@hotmail.com</p>
         <div class="social-icons">
+           <a class="social-link social-email" ><img class="email-icon" src="./assets/img/Property 1=Mail.png"></a>
           <a href="#" class="social-link">
             <img class="github-icon" src="./assets/img/Property 1=GitHub.png" alt="github icon"/>
           </a>

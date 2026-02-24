@@ -55,7 +55,7 @@
 
 .icons-grid {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(4, 90px);
   row-gap: 72px;
   column-gap: 40px;
   align-items: start;

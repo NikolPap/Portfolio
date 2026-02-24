@@ -83,15 +83,43 @@ h2 {
   color: #3dcfb6;
 }
 
-
 .hamburger,
 .mobile-menu-overlay {
   display: none;
 }
 
+@media (max-width: 1183px) {
+
+  .icons-grid {
+    grid-template-columns: repeat(3, 70px);
+
+  }
+
+  .skills-glass-card  {
+    min-height: 580px;
+  }
+
+  h2 {
+    font-size: 56px;
+  }
+
+  .projects-section {
+    padding-top: 100px;
+  }
+
+  .project-image-preview {
+    right: -310px;
+  }
+
+  .projects-list{
+    width: 70%;
+  }
+
+}
+
 @media (max-width: 900px) {
   .navbar {
-    padding: 20px 40px; 
+    padding: 20px 40px;
   }
 
   .navigation {
@@ -101,13 +129,12 @@ h2 {
     align-items: center;
   }
 
-
   .nav-left.desktop-nav {
     display: none;
   }
 
   .logo {
-    order: 1; 
+    order: 1;
     height: 48px;
     content: url("./assets/img/smallLogo.png");
   }
@@ -116,7 +143,6 @@ h2 {
     content: url("./assets/img/smallLogoHover.png");
   }
 
-
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -124,8 +150,8 @@ h2 {
     width: 30px;
     height: 20px;
     cursor: pointer;
-    z-index: 1001; 
-    order: 2; 
+    z-index: 1001;
+    order: 2;
     position: relative;
   }
 
@@ -140,13 +166,15 @@ h2 {
 
   .mobile-menu-overlay {
     position: absolute;
-    top: 73px;
-    left: 452px;
+    top: 70px;
+    right: 28px;
+    left: auto;
     width: 293px;
     height: auto;
     display: none;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    z-index: 1000;
   }
 
   .mobile-menu-overlay.open {
@@ -176,12 +204,197 @@ h2 {
     flex-direction: column;
     gap: 30px;
   }
+
   .mobile-lang-switch {
-    transform: scale(1.2); 
+    transform: scale(1.2);
   }
-s
-  .sidebar-right,
-  .scroll-down {
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 62px;
+  }
+
+  .cta-buttons {
+    gap: 24px;
+  }
+
+  .email {
     display: none;
   }
+
+  .social-email {
+    display: block !important;
+  }
+
+  .email-icon:hover {
+    content: url("./assets/img/mailHover.png");
+  }
+
+  .sidebar-right {
+    gap: 7px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .about-photo {
+    max-width: 368px;
+    height: 368px;
+  }
+
+  .about-image {
+    max-width: 368px;
+    height: 368px;}
+
+  body {
+    font-size: 16px;
+  }
+  .who-i-am {
+    font-size: 18px;
+  }
+
+  .image-wrapper.active img {
+    margin-top: 50px;
+  }
+
+  .about-content {
+    margin-top: 70px;
+  }
+
+  .image-wrapper::before {
+    top: -62px;
+  }
+
+  .about-card {
+    max-width: 368px;
+    margin-bottom: 50px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .skills-card-title {
+    font-size: 18px;
+  }
+
+  .skills-glass-card {
+    max-width: 368px;
+     min-height: 568px;
+  }
+
+  .projects-pre-title {
+    font-size: 18px;
+  }
+
+ .project-image-preview {
+  display: none;
+ }
+
+  .projects-list {
+    width: 100%;
+  }
+
+  .project-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-row {
+    padding-left: 0;
+  }
+  .review-card {
+    max-width: 358px;
+  }
+
+  .colleagues-title {
+    text-align: center;
+  }
+  .contact-container {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .contact-pre-title {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .contact-label {
+    font-size: 20px;
+  }
+
+  .contact-form input, .contact-form textarea {
+    font-size: 16px;
+  }
+
+  .footer-wrapper {
+    padding: 0 20px;
+  }
+
+  }
+
+@media (max-width: 500px) {
+  .mobile-menu-content {
+    width: 59%;
+    padding: 21px 20px;
+    height: 240px;
+  }
+
+  .navbar {
+    padding: 20px 39px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+
+  .sidebar-right {
+    right: 30px;
+  }
+
+  .scroll-down {
+    left: 30px;
+  }
+
+  .icons-grid {
+    grid-template-columns: repeat(3, 70px);
+  }
+
+    .privacy-error-msg {
+    top: 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  .icons-grid {
+    grid-template-columns: repeat(3, 50px);
+
+  }
+
+
 }
