@@ -171,3 +171,17 @@ dialog::backdrop {
 .next-project:hover .trans-arrow {
   transform: translateX(5px);
 }
+
+dialog::-webkit-scrollbar {
+  width: 20px;
+}
+
+dialog {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+}
+
+.modal-container {
+  overflow-y: auto;
+}

@@ -88,6 +88,16 @@ h2 {
   display: none;
 }
 
+@media (max-width: 1240px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  .sidebar-right {
+    right: 50px;
+  }
+}
+
 @media (max-width: 1183px) {
   .icons-grid {
     grid-template-columns: repeat(3, 70px);
@@ -111,6 +121,22 @@ h2 {
 
   .projects-list {
     width: 70%;
+  }
+
+  .email {
+    display: none;
+  }
+
+  .social-email {
+    display: block !important;
+  }
+
+  .email-icon:hover {
+    content: url("./assets/img/mailHover.png");
+  }
+
+  .sidebar-right {
+    gap: 7px;
   }
 }
 
@@ -216,22 +242,6 @@ h2 {
 
   .cta-buttons {
     gap: 24px;
-  }
-
-  .email {
-    display: none;
-  }
-
-  .social-email {
-    display: block !important;
-  }
-
-  .email-icon:hover {
-    content: url("./assets/img/mailHover.png");
-  }
-
-  .sidebar-right {
-    gap: 7px;
   }
 
   .about-container {
@@ -408,7 +418,7 @@ h2 {
   }
 
   .legal-section {
-  padding: 80px 20px;
+    padding: 80px 20px;
   }
 }
 
@@ -441,11 +451,11 @@ h2 {
   }
 
   .sidebar-right {
-    right: 0px;
+    right: 16px;
   }
 
   .scroll-down {
-    left: 0px;
+    left: 5px;
   }
 
   .icons-grid {
@@ -480,5 +490,42 @@ h2 {
 @media (max-width: 380px) {
   .icons-grid {
     grid-template-columns: repeat(3, 50px);
+  }
+
+  .line {
+    height: 110px;
+  }
+
+  .social-vector {
+    height: 110px;
+  }
+
+  .btn {
+    padding: 12px 8px;
+  }
+
+  .social-icons a {
+    width: 25px;
+    height: 25px;
+  }
+
+  .social-icons {
+    gap: 8px;
+  }
+
+  .review-card {
+    max-width: 262px;
+  }
+
+  .email-icon {
+    width: 23px;
+  }
+
+  .github-icon {
+    width: 23px;
+  }
+
+  .linkedin-icon {
+    width: 23px;
   }
 }
