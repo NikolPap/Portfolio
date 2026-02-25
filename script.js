@@ -51,9 +51,6 @@ function initializeEventListeners() {
 document.addEventListener('click', function(event) {
     const mobileMenu = document.getElementById("mobile-menu");
     const hamburger = document.getElementById("hamburger-btn");
-
-    // Ελέγχουμε αν το μενού είναι ανοιχτό
-    // και αν το κλικ ΔΕΝ έγινε πάνω στο μενού ή στο hamburger
     if (mobileMenu.classList.contains("open") && 
         !mobileMenu.contains(event.target) && 
         !hamburger.contains(event.target)) {

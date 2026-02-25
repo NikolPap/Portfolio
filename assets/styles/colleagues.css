@@ -59,6 +59,7 @@
   position: relative;
   transition: all 0.3s ease;
   flex-shrink: 0;
+  height: fit-content;
 }
 
 .active-card {

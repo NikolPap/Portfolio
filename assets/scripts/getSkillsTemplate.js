@@ -6,7 +6,7 @@ function getSkillsTemplate() {
             <div class="skills-glass-card">
                 <h2 class="skills-title">Skill Set</h2>
                 <p class="main-description">
-                    A short introduction of your skills. Highlight your experience of using different front-end technologies and emphasise your openness to learning and adapting to new technologies.
+                   I have experience in front-end development using HTML, CSS, JavaScript, TypeScript, and Angular, along with Material Design for clean interfaces. I work with Firebase, REST APIs, Git, and follow Scrum practices. I am always eager to learn new technologies and adapt quickly to modern development trends.
                 </p>
                 <div class="info-row">
                    <p  style="color: var(--color-primary); font-size: 24px; font-weight: bold; font-family:'Fira Code', sans-serif;"><span class="white-letters">You need</span> another skill?</p>

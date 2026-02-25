@@ -8,8 +8,8 @@ const reviewsData = [
     author: "H.Janisch - Team Partner",
   },
   {
-    text: "I had the good fortune of working with Lukas on a project at the Developer Akademie. He always stayed calm and made sure our team was set up for success.",
-    author: "V.Schuhmann - Team Partner",
+    text: "Nikoleta enriched our team with her great dedication and quick grasp of concepts. Thanks to her strong ability to understand complex connections rapidly and translate them efficiently into code, she contributed valuable insights to our work. With her keen eye for detail, she reliably identified programming errors and quickly found effective solutions.",
+    author: "K.Klages-Team Partner",
   },
   {
     text: "He is a very helpful colleague who is always there for you. His efficient way of working is inspiring.",
@@ -17,7 +17,7 @@ const reviewsData = [
   },
 ];
 
-let currentReviewIndex = 0; 
+let currentReviewIndex = 0;
 
 function init() {
   renderHero();

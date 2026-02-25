@@ -6,9 +6,7 @@ function getContactTemplate() {
             <h2 class="contact-headline">Let's work<br>together</h2>
             <h3 class="contact-sub-headline">Got a problem to solve?</h3>
             <div class="contact-arrow-container">
-               <p class="contact-text">Encourage people to contact you and describe what role you are interested in. Show that you’ll add value to their projects through your work. 
-
-Need a Frontend developer? Let’s talk!<br><br>Need a Frontend developer? <span class="lets-talk-text">Let's talk!</span></p>
+               <p class="contact-text">Need a Frontend Developer? <span class="lets-talk-text">Let’s talk!</span> I’m passionate about building responsive, user-friendly web applications and bringing ideas to life with clean, efficient code. I’m eager to contribute to innovative projects, learn new technologies, and add real value to your team.</p>
             </div>
         </div>
 
