@@ -240,6 +240,10 @@ h2 {
     font-size: 62px;
   }
 
+  h2 {
+    font-size: 48px;
+  }
+
   .cta-buttons {
     gap: 24px;
   }
@@ -420,6 +424,14 @@ h2 {
   .legal-section {
     padding: 80px 20px;
   }
+
+  .toggle-bg {
+    height: 22px;
+  }
+
+  .active-card {
+    height: 460px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -463,7 +475,7 @@ h2 {
   }
 
   .privacy-error-msg {
-    top: 50px;
+    top: 70px;
   }
 
   .footer-logo {
@@ -484,6 +496,14 @@ h2 {
 
   .review-card {
     padding: 20px;
+  }
+
+  .toggle-bg {
+    height: 29px;
+  }
+
+  .review-text {
+    padding-top: 20px;
   }
 }
 

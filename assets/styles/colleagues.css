@@ -63,6 +63,7 @@
 }
 
 .active-card {
+  height: 270px;
   background-color: #3dcfb64d;
   border: 1px solid var(--color-primary);
   z-index: 2;

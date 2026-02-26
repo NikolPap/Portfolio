@@ -1,51 +1,147 @@
-/* =========================================
-   Initialization Function
-   ========================================= */
+let currentLang = localStorage.getItem('lang') || 'en';
+
 function initializeEventListeners() {
     const navLinks = document.querySelectorAll(".nav-links a");
-    const langToggleDesktop = document.getElementById("lang-toggle-desktop");
-    const langToggleMobile = document.getElementById("lang-toggle-mobile");
-    const langBtns = document.querySelectorAll(".lang-btn");
-
+    const hamburger = document.getElementById("hamburger-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
     function handleNavLinkClick(event) {
         navLinks.forEach((link) => link.classList.remove("active"));
         event.currentTarget.classList.add("active");
     }
-
-  function handleLanguageToggle() {
-        if(langToggleDesktop) langToggleDesktop.classList.toggle("de-active");
-        if(langToggleMobile) langToggleMobile.classList.toggle("de-active");
-        langBtns.forEach((btn) => btn.classList.toggle("active"));
-
-    }
-
     navLinks.forEach((link) => {
         link.addEventListener("click", handleNavLinkClick);
     });
-
-    if (langToggleDesktop) langToggleDesktop.addEventListener("click", handleLanguageToggle);
-    if (langToggleMobile) langToggleMobile.addEventListener("click", handleLanguageToggle);
-    const hamburger = document.getElementById("hamburger-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-
+    document.querySelectorAll('.lang-switch').forEach(switchEl => {
+        switchEl.onclick = () => {
+             const newLang = currentLang === 'en' ? 'de' : 'en';
+             switchLanguage(newLang);
+        };
+    });
     if (hamburger && mobileMenu) {
-        hamburger.addEventListener("click", () => {
+        hamburger.onclick = () => {
             hamburger.classList.toggle("active");
             mobileMenu.classList.toggle("open");
-            
-            if (mobileMenu.classList.contains("open")) {
-                document.body.style.overflow = "hidden";
-            } else {
-                document.body.style.overflow = "auto";
-            }
-        });
+            document.body.style.overflow = mobileMenu.classList.contains("open") ? "hidden" : "auto";
+        };
     }
-
-    // --- Modal Logic (Existing) ---
     const projectRows = document.querySelectorAll(".project-row");
     projectRows.forEach((row, index) => {
         row.addEventListener("click", () => openProjectDialog(index));
     });
+}
+
+
+function switchLanguage(lang) {
+    if (currentLang === lang) return;
+    
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+    
+    document.body.style.overflow = 'auto';
+    
+    if (document.body.classList.contains('legal-notice-body')) {
+        renderLegalView();
+        const footer = document.getElementById("footer");
+        if(footer) footer.innerHTML = getFooterTemplate();
+    } else {
+        renderAllContent();
+    }
+    
+    updateLanguageToggles();
+    initializeEventListeners();
+}
+
+function renderLegalView() {
+    const t = translations[currentLang].legal;
+    const elements = [
+        { id: 'legal-mainTitle', key: 'mainTitle' },
+        { id: 'legal-imprintTitle', key: 'imprintTitle' },
+        { id: 'legal-boardTitle', key: 'boardTitle' },
+        { id: 'legal-boardText', key: 'boardText' },
+        { id: 'legal-acceptanceTitle', key: 'acceptanceTitle' },
+        { id: 'legal-acceptanceText', key: 'acceptanceText' },
+        { id: 'legal-scopeTitle', key: 'scopeTitle' },
+        { id: 'legal-scopeText', key: 'scopeText' },
+        { id: 'legal-proprietaryTitle', key: 'proprietaryTitle' },
+        { id: 'legal-proprietaryText', key: 'proprietaryText' },
+        { id: 'legal-useTitle', key: 'useTitle' },
+        { id: 'legal-useText', key: 'useText' },
+        { id: 'legal-disclaimerTitle', key: 'disclaimerTitle' },
+        { id: 'legal-disclaimerText', key: 'disclaimerText' },
+        { id: 'legal-indemnityTitle', key: 'indemnityTitle' },
+        { id: 'legal-indemnityText', key: 'indemnityText' }
+    ];
+    elements.forEach(el => {
+        const domEl = document.getElementById(el.id);
+        if (domEl) {
+            domEl.innerHTML = t[el.key];
+        }
+    });
+    const imprintList = document.getElementById('legal-imprintList');
+    if (imprintList) imprintList.innerHTML = t.imprintList;
+
+    const dateEl = document.getElementById('legal-date');
+    if (dateEl) dateEl.innerHTML = t.date;
+    const navT = translations[currentLang].nav;
+    const aboutLink = document.querySelector('a[href="index.html#about"]');
+    const skillsLink = document.querySelector('a[href="index.html#skills"]');
+    const projectsLink = document.querySelector('a[href="index.html#projects"]');
+    
+    if (aboutLink) aboutLink.innerText = navT.about;
+    if (skillsLink) skillsLink.innerText = navT.skills;
+    if (projectsLink) projectsLink.innerText = navT.projects;
+}
+
+
+function handleLanguageSwitch() {
+    currentLang = currentLang === 'en' ? 'de' : 'en';
+    localStorage.setItem('lang', currentLang); 
+    
+    updateLanguageToggles();
+    renderAllContent();
+    initializeEventListeners(); 
+}
+
+function updateLanguageToggles() {
+    const langToggleDesktop = document.getElementById("lang-toggle-desktop");
+    const langToggleMobile = document.getElementById("lang-toggle-mobile");
+    const langBtns = document.querySelectorAll(".lang-btn");
+    langBtns.forEach(btn => btn.classList.remove("active"));
+    document.querySelectorAll(`.lang-btn[data-lang="${currentLang}"]`).forEach(btn => {
+        btn.classList.add("active");
+    });
+    if (currentLang === 'de') {
+        if(langToggleDesktop) langToggleDesktop.classList.add("de-active");
+        if(langToggleMobile) langToggleMobile.classList.add("de-active");
+    } else {
+        if(langToggleDesktop) langToggleDesktop.classList.remove("de-active");
+        if(langToggleMobile) langToggleMobile.classList.remove("de-active");
+    }
+}
+
+function updateReviewsDisplay(direction) {
+  const t = translations[currentLang];
+  const len = reviewsData.length;
+  const indexCenter = currentReviewIndex;
+  const indexLeft = (currentReviewIndex - 1 + len) % len;
+  const indexRight = (currentReviewIndex + 1) % len;
+
+  const leftCard = document.getElementById("text-left");
+  const centerCard = document.getElementById("text-center");
+  const rightCard = document.getElementById("text-right");
+
+  if(leftCard) {
+      document.getElementById("text-left").innerHTML = reviewsData[indexLeft].text[currentLang];
+      document.getElementById("author-left").innerHTML = reviewsData[indexLeft].author;
+      
+      document.getElementById("text-center").innerHTML = reviewsData[indexCenter].text[currentLang];
+      document.getElementById("author-center").innerHTML = reviewsData[indexCenter].author;
+      
+      document.getElementById("text-right").innerHTML = reviewsData[indexRight].text[currentLang];
+      document.getElementById("author-right").innerHTML = reviewsData[indexRight].author;
+      
+      renderDots(len, indexCenter);
+  }
 }
 
 document.addEventListener('click', function(event) {
@@ -70,13 +166,6 @@ function closeMobileMenu() {
     }
 }
 
-/**
- * Activates a permanent grid background effect on first hover.
- * The effect is applied only once and will not trigger again.
- *
- * @param {string} elementId - The ID of the wrapper element.
- * @param {string} activeClass - The CSS class to apply permanently.
- */
 function activateOnFirstHover(elementId, activeClass) {
   const element = document.getElementById(elementId);
 
@@ -103,8 +192,6 @@ function toggleSubmitButton() {
     email.trim() !== ""
   );
 }
-
-/* --- Validation Functions --- */
 
 function validateName() {
   const input = document.getElementById("name");
