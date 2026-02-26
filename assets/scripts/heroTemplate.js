@@ -62,10 +62,10 @@ function getheroTemplate() {
         </div>
       </div>
       <div class="scroll-down">
-        <div class="arrow">
-          <img class="arrow-img-1" src="./assets/img/Property 1=Bewegung1.png" alt="arrow"/>
+         <a href="#about"><div class="arrow">
+         <img class="arrow-img-1" src="./assets/img/Property 1=Bewegung1.png" alt="arrow"/>
           <img class="arrow-img-2" src="./assets/img/Property 1=Bewegung.png" alt="arrow"/>
-        </div>
+        </div></a>
         <div><img class="line" src="./assets/img/Vector 1.png" alt="vector"/></div>
       </div>
     </div>

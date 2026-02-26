@@ -1,0 +1,44 @@
+.legal-notice-body {
+  background-image: url("../img/12.\ Skill\ set\ Background.png");
+  background-size: cover;
+}
+
+.legal-section {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-bg);
+  padding: 120px 80px;
+  background-image: url("../img/12.\ Skill\ set\ Background.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.legal-notice-ul {
+  color: #3dcfb6;
+  font-family: var(--font-secondary);
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.legal-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.legal-section h1 {
+  margin-bottom: 60px;
+  text-align: center;
+  color: #3dcfb6;
+}
+
+.legal-section h3 {
+  color: var(--color-white);
+  font-size: 24px;
+}
+
+.legal-section p {
+  font-family: var(--font-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #3dcfb6;
+}

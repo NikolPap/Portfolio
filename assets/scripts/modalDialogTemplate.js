@@ -14,7 +14,7 @@ function getModalDialogTemplate(project, techIconsHtml) {
             <div class="tech-stack">${techIconsHtml}</div>
             
             <div class="modal-buttons">
-                <a href="${project.githubLink}" target="_blank" class="modal-btn btn">
+                <a href="https://github.com/NikolPap" target="_blank"  class="modal-btn btn">
                     ${t.projects.btnGithub} <img class="trans-arrow" src="assets/img/arrow_outward2.png" alt="arrow"> 
                 </a>
                 <a href="${project.liveLink}" target="_blank" class="modal-btn btn">

@@ -30,7 +30,7 @@ const translations = {
       techTitle: "Technologies",
       mainTitle: "Skill Set",
       description:
-        "I have experience in front-end development using HTML, CSS, JavaScript, TypeScript, and Angular, along with Material Design for clean interfaces. I work with Firebase, REST APIs, Git, and follow Scrum practices. I am always eager to learn new technologies and adapt quickly to modern development trends.",
+        "I have foundational experience in front-end development using HTML, CSS, JavaScript, TypeScript, and Angular, along with Material Design to create clean user interfaces. I have worked with Firebase, REST APIs, and Git, and I am familiar with Scrum methodologies. As a motivated junior developer, I am eager to continuously improve my skills and adapt to modern development practices.",
       anotherSkill: "You need",
       anotherSkillBold: "another skill?",
       contactText:
@@ -145,13 +145,13 @@ const translations = {
       techTitle: "Technologien",
       mainTitle: "Fähigkeiten",
       description:
-        "Ich habe Erfahrung in der Frontend-Entwicklung mit HTML, CSS, JavaScript, TypeScript und Angular sowie Material Design für saubere Schnittstellen. Ich arbeite mit Firebase, REST-APIs, Git und folge Scrum-Praktiken. Ich bin immer begierig darauf, neue Technologien zu lernen und mich schnell an moderne Entwicklungstrends anzupassen.",
+        "Ich verfüge über grundlegende Kenntnisse in der Frontend-Entwicklung mit HTML, CSS, JavaScript, TypeScript und Angular sowie mit Material Design zur Erstellung klarer und benutzerfreundlicher Oberflächen. Ich habe mit Firebase, REST-APIs und Git gearbeitet und bin mit Scrum-Methoden vertraut. Als motivierte Junior-Entwicklerin bin ich bestrebt, meine Fähigkeiten kontinuierlich zu verbessern und mich an moderne Entwicklungspraktiken anzupassen.",
       anotherSkill: "Sie brauchen",
       anotherSkillBold: "einen anderen Skill?",
       contactText:
         "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
       btnTalk: "Lass uns reden",
-      growth: "Wachstumsmentalität",
+     growth: "Growth mindset",
     },
     projects: {
       preTitle: "Portfolio",

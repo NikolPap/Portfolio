@@ -1,0 +1,94 @@
+@media (max-width: 1240px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  .sidebar-right {
+    right: 50px;
+  }
+}
+
+@media (max-width: 1183px) {
+  .icons-grid {
+    grid-template-columns: repeat(3, 70px);
+  }
+
+  .skills-glass-card {
+    min-height: 580px;
+  }
+
+  h2 {
+    font-size: 56px;
+  }
+
+  .projects-section {
+    padding-top: 100px;
+  }
+
+  .project-image-preview {
+    right: -310px;
+  }
+
+  .projects-list {
+    width: 70%;
+  }
+
+  .email {
+    display: none;
+  }
+
+  .social-email {
+    display: block !important;
+  }
+
+  .email-icon:hover {
+    content: url("../img/mailHover.png");
+  }
+
+  .sidebar-right {
+    gap: 7px;
+  }
+}
+
+@media (max-width: 380px) {
+  .icons-grid {
+    grid-template-columns: repeat(3, 50px);
+  }
+
+  .line {
+    height: 110px;
+  }
+
+  .social-vector {
+    height: 110px;
+  }
+
+  .btn {
+    padding: 12px 8px;
+  }
+
+  .social-icons a {
+    width: 25px;
+    height: 25px;
+  }
+
+  .social-icons {
+    gap: 8px;
+  }
+
+  .review-card {
+    max-width: 262px;
+  }
+
+  .email-icon {
+    width: 23px;
+  }
+
+  .github-icon {
+    width: 23px;
+  }
+
+  .linkedin-icon {
+    width: 23px;
+  }
+}
