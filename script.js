@@ -309,3 +309,14 @@ function sendContactEmail(event) {
     }, 3000);
   }, 1500);
 }
+
+function initCursorGlow() {
+    const cursorGlow = document.getElementById('cursor-glow');
+
+    if (cursorGlow) {
+        document.addEventListener('mousemove', function(e) {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+        });
+    }
+}

@@ -50,6 +50,79 @@
   }
 }
 
+@media (max-width: 500px) {
+  .mobile-menu-content {
+    width: 59%;
+    padding: 21px 20px;
+    height: 240px;
+  }
+
+  .navbar {
+    padding: 20px 39px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+
+  .sidebar-right {
+    right: 16px;
+  }
+
+  .scroll-down {
+    left: 5px;
+  }
+
+  .icons-grid {
+    grid-template-columns: repeat(3, 70px);
+  }
+
+  .privacy-error-msg {
+    top: 70px;
+  }
+
+  .footer-logo {
+    height: 36px;
+  }
+
+  .cta-buttons {
+    gap: 7px;
+  }
+
+  .review-card {
+    max-width: 301px;
+  }
+
+  .quote-icon {
+    width: 70px;
+  }
+
+  .review-card {
+    padding: 20px;
+  }
+
+  .toggle-bg {
+    height: 29px;
+  }
+
+  .review-text {
+    padding-top: 20px;
+  }
+}
+
 @media (max-width: 380px) {
   .icons-grid {
     grid-template-columns: repeat(3, 50px);

@@ -2,21 +2,21 @@ const reviewsData = [
   {
     text: {
       en: "Lukas has proven to be a reliable group partner. His technical skills and proactive approach were crucial to the success of our project.",
-      de: "Lukas hat sich als zuverlässiger Gruppenpartner erwiesen. Seine technischen Fähigkeiten und sein proaktiver Ansatz waren entscheidend für den Erfolg unseres Projekts."
+      de: "Lukas hat sich als zuverlässiger Gruppenpartner erwiesen. Seine technischen Fähigkeiten und sein proaktiver Ansatz waren entscheidend für den Erfolg unseres Projekts.",
     },
     author: "H.Janisch - Team Partner",
   },
   {
     text: {
       en: "Nikoleta enriched our team with her great dedication and quick grasp of concepts. Thanks to her strong ability to understand complex connections rapidly and translate them efficiently into code, she contributed valuable insights to our work. With her keen eye for detail, she reliably identified programming errors and quickly found effective solutions.",
-      de: "Nikoleta bereicherte unser Team mit ihrem großen Engagement und ihrer schnellen Auffassungsgabe. Dank ihrer starken Fähigkeit, komplexe Zusammenhänge schnell zu verstehen und effizient in Code umzusetzen, trug sie wertvolle Erkenntnisse zu unserer Arbeit bei."
+      de: "Nikoleta bereicherte unser Team mit ihrem großen Engagement und ihrer schnellen Auffassungsgabe. Dank ihrer starken Fähigkeit, komplexe Zusammenhänge schnell zu verstehen und effizient in Code umzusetzen, trug sie wertvolle Erkenntnisse zu unserer Arbeit bei.",
     },
     author: "K.Klages-Team Partner",
   },
   {
     text: {
       en: "He is a very helpful colleague who is always there for you. His efficient way of working is inspiring.",
-      de: "Er ist ein sehr hilfsbereiter Kollege, der immer für einen da ist. Seine effiziente Arbeitsweise ist inspirierend."
+      de: "Er ist ein sehr hilfsbereiter Kollege, der immer für einen da ist. Seine effiziente Arbeitsweise ist inspirierend.",
     },
     author: "T.Schulz - Frontend Developer",
   },
@@ -30,6 +30,7 @@ function init() {
   initializeEventListeners();
   activateOnFirstHover("imageBox", "active");
   initModal();
+  initCursorGlow();
 }
 
 function renderAllContent() {
@@ -40,9 +41,9 @@ function renderAllContent() {
   document.getElementById("colleagues").innerHTML = getColleaguesTemplate();
   document.getElementById("contact").innerHTML = getContactTemplate();
   document.getElementById("footer").innerHTML = getFooterTemplate();
-  
+
   updateReviewsDisplay();
-  updateLanguageToggles(); 
+  updateLanguageToggles();
 }
 
 function renderHero() {

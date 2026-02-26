@@ -21,6 +21,7 @@
   </head>
 
   <body class="legal-notice-body" onload="initLegal()">
+    <div id="cursor-glow"></div>
     <section style="height: auto; padding-bottom: 100px">
       <nav class="navbar">
         <div class="navigation">
@@ -139,6 +140,7 @@
         if (typeof initializeEventListeners === "function") {
           initializeEventListeners();
         }
+        initCursorGlow()
       }
     </script>
   </body>
