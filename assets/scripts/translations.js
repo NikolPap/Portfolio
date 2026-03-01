@@ -135,7 +135,7 @@ const translations = {
       description:
         "Hallo, ich bin Nikoleta! Ich begeistere mich für IT und Softwareentwicklung. Programmieren ermöglicht es mir, Ideen in praktische Lösungen umzusetzen und Systeme durch sauberen und effizienten Code zu verbessern. Ich werde durch kontinuierlichen technologischen Fortschritt motiviert und strebe immer danach, meine Programmierkenntnisse zu verbessern.",
       location:
-        "Ich in Wiesbaden. Ich bin offen für Remote-Arbeit und genieße die Zusammenarbeit mit diversen Teams.",
+        "Ich lebe in Wiesbaden. Ich bin offen für Remote-Arbeit und genieße die Zusammenarbeit mit diversen Teams.",
       learning:
         "Ich bin aufgeschlossen und begeistert davon, neue Technologien zu lernen. Ich genieße es, moderne Tools, Frameworks und Entwicklungspraktiken zu erkunden. Kontinuierliches Lernen ist für mich essentiell, um im IT-Bereich zu wachsen.",
       problemSolving:

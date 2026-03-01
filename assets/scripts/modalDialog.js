@@ -76,13 +76,25 @@ function initModal() {
 
 function openProjectDialog(index) {
   const modal = document.getElementById("projectModal");
+  const glow = document.getElementById("cursor-glow"); 
+  
   currentProjectIndex = index;
   renderModalContent(index);
+
+  if (modal && glow) {
+    modal.appendChild(glow);
+  }
+
   modal.showModal();
 }
 
 function closeModal() {
   const modal = document.getElementById("projectModal");
+  const glow = document.getElementById("cursor-glow"); 
+  if (glow) {
+    document.body.appendChild(glow);
+  }
+
   modal.close();
 }
 
