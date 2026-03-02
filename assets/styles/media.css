@@ -29,9 +29,7 @@
     right: -310px;
   }
 
-  .projects-list {
-    width: 70%;
-  }
+
 
   .email {
     display: none;
@@ -120,6 +118,14 @@
 
   .review-text {
     padding-top: 20px;
+  }
+
+  .review-card {
+    max-width: 290px;
+  }
+
+  .active-card {
+    height: 565px;
   }
 }
 

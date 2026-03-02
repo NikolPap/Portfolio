@@ -1,3 +1,18 @@
+/**
+ * Generates the HTML template for the contact section of the portfolio.
+ *
+ * Uses the current language translations from the `translations` object
+ * to populate form labels, placeholders, privacy text, and buttons.
+ *
+ * @returns {string} HTML string representing the contact section, including:
+ *   - Left panel with pre-title, headline, sub-headline, and descriptive text
+ *   - Right panel with a contact form containing:
+ *       - Name input with validation
+ *       - Email input with validation
+ *       - Message textarea with validation
+ *       - Privacy checkbox and link
+ *       - Submit button
+ */
 function getContactTemplate() {
   const t = translations[currentLang].contact;
   return `

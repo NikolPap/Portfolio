@@ -1,3 +1,18 @@
+/**
+ * Generates the HTML template for the "About Me" section.
+ *
+ * Uses the current language translations from `translations[currentLang].about`
+ * to populate the content of the section.
+ *
+ * @returns {string} HTML string representing the "About Me" section, including:
+ *   - Profile image
+ *   - Section title and subtitle
+ *   - Description text
+ *   - Info rows for:
+ *       - Location
+ *       - Learning/technologies
+ *       - Problem-solving approach
+ */
 function getAboutMeTemplate() {
   const t = translations[currentLang].about;
 

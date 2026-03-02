@@ -17,7 +17,8 @@ const projects = [
       { name: "TypeScript", icon: "assets/img/Property 1=TypeScript (1).png" },
     ],
     image: "assets/img/Frame 372.png",
-    githubLink: "#",
+    githubLink: "https://github.com/NikolPap/Join.git",
+    
     liveLink: "#",
   },
   {
@@ -54,6 +55,10 @@ const projects = [
   },
 ];
 
+/**
+ * Initializes the modal by adding a click listener to close it
+ * when clicking outside the modal content.
+ */
 function initModal() {
   const modal = document.getElementById("projectModal");
 
@@ -74,6 +79,10 @@ function initModal() {
   });
 }
 
+/**
+ * Opens the project modal dialog for a specific project.
+ * @param {number} index - The index of the project in the projects array.
+ */
 function openProjectDialog(index) {
   const modal = document.getElementById("projectModal");
   const glow = document.getElementById("cursor-glow"); 
@@ -88,6 +97,9 @@ function openProjectDialog(index) {
   modal.showModal();
 }
 
+/**
+ * Closes the project modal and restores the glow element to the body.
+ */
 function closeModal() {
   const modal = document.getElementById("projectModal");
   const glow = document.getElementById("cursor-glow"); 
@@ -98,6 +110,10 @@ function closeModal() {
   modal.close();
 }
 
+/**
+ * Moves to the next project in the array and renders its modal content.
+ * Wraps around to the first project if at the end of the list.
+ */
 function nextProject() {
   currentProjectIndex++;
   if (currentProjectIndex >= projects.length) {
@@ -106,6 +122,10 @@ function nextProject() {
   renderModalContent(currentProjectIndex);
 }
 
+/**
+ * Renders the modal content for a specific project.
+ * @param {number} index - The index of the project in the projects array.
+ */
 function renderModalContent(index) {
   const project = projects[index];
   const t = translations[currentLang];

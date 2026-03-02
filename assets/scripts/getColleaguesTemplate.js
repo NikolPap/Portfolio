@@ -1,3 +1,16 @@
+/**
+ * Generates the HTML template for the colleagues/reviews section.
+ *
+ * Uses the current language translations from the `translations` object
+ * to populate the title of the section.
+ *
+ * @returns {string} HTML string representing the colleagues section, including:
+ *   - Section title
+ *   - Carousel with three review cards (left, center, right)
+ *       - Center card shows active review with quote icon
+ *       - Side cards show previous/next reviews
+ *   - Carousel controls with previous/next buttons and dot indicators
+ */
 function getColleaguesTemplate() {
     const t = translations[currentLang].colleagues;
     return `

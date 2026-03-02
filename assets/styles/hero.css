@@ -1,4 +1,3 @@
-
 #hero {
   height: 100vh;
   width: 100%;
@@ -21,16 +20,16 @@
 }
 
 .navbar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    max-width: 1440px; 
-    padding: 30px 80px;
-    justify-content: space-between;
-    align-items: center;
-    left: 50%;
-    transform: translateX(-50%);
-    box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 1440px;
+  padding: 30px 80px;
+  justify-content: space-between;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
 }
 
 .nav-left {
@@ -163,25 +162,25 @@
 }
 
 .sidebar-right {
-    position: absolute;
-    right: 80px; 
-    bottom: 0;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    pointer-events: auto; 
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  pointer-events: auto;
 }
 
 .hero-wrapper {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); 
-    width: 100%;
-    max-width: 1440px;
-    height: 100%;
-    pointer-events: none; 
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  pointer-events: none;
 }
 
 .email {
@@ -258,13 +257,13 @@
 }
 
 .scroll-down {
-    position: absolute;
-    left: 80px;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    pointer-events: auto;
+  position: absolute;
+  left: 80px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
 }
 
 .arrow {
@@ -363,9 +362,9 @@
 }
 
 .sidebars {
-    display: flex;
+  display: flex;
 }
 
-.social-email{
-  display: none!important;
+.social-email {
+  display: none !important;
 }

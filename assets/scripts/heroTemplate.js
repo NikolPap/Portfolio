@@ -1,3 +1,16 @@
+/**
+ * Generates the HTML template for the hero section and navigation of the portfolio.
+ *
+ * Uses the current language translations from the `translations` object
+ * to populate the navigation links, hero subtitle, CTA buttons, and marquee text.
+ *
+ * @returns {string} HTML string representing the hero section including:
+ *   - Navbar with desktop and mobile menus
+ *   - Hero content with subtitle, name, and CTA buttons
+ *   - Sidebar with email and social icons
+ *   - Scroll-down arrow
+ *   - Marquee animation
+ */
 function getheroTemplate() {
   const t = translations[currentLang];
   

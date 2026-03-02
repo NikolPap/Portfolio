@@ -1,3 +1,16 @@
+/**
+ * Generates the HTML template for the projects section of the portfolio.
+ *
+ * Uses the current language translations from the `translations` object
+ * to populate section titles, subtitles, and button labels.
+ *
+ * @returns {string} HTML string representing the projects section, including:
+ *   - Section pre-title, main title, and subtitle
+ *   - List of projects, each with:
+ *       - Project name with arrow icon
+ *       - Project technologies listed
+ *       - Project image preview
+ */
 function getProjectsTemplate() {
     const t = translations[currentLang].projects;
     return `

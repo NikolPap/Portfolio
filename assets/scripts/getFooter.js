@@ -1,3 +1,14 @@
+/**
+ * Generates the HTML template for the footer section of the portfolio.
+ *
+ * Uses the current language translations from the `translations` object
+ * to populate footer texts, role, copyright, and legal links.
+ *
+ * @returns {string} HTML string representing the footer section, including:
+ *   - Left section with logo and role
+ *   - Center section with copyright text
+ *   - Right section with links to GitHub, LinkedIn, email, and legal notice
+ */
 function getFooterTemplate() {
     const t = translations[currentLang].footer;
     return `

@@ -1,3 +1,13 @@
+/**
+ * Generates the HTML template for the skills section of the portfolio.
+ *
+ * Uses the current language translations from the `translations` object
+ * to populate section titles, descriptions, buttons, and labels.
+ *
+ * @returns {string} HTML string representing the skills section, including:
+ *   - Left panel with skills title, description, and CTA button
+ *   - Right panel with a grid of skill icons and labels
+ */
 function getSkillsTemplate() {
     const t = translations[currentLang].skills;
     return `

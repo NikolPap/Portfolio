@@ -1,3 +1,16 @@
+/**
+ * @file translations.js
+ * @description Contains all translations for the portfolio in English (en) and German (de).
+ * Includes text for navigation, hero section, about, skills, projects, colleagues, contact, footer, and legal sections.
+ * 
+ * Structure:
+ * translations = {
+ *   en: { ... }, // English translations
+ *   de: { ... }  // German translations
+ * }
+ * 
+ * Each language contains nested objects for each section of the website.
+ */
 const translations = {
   en: {
     nav: {
@@ -9,7 +22,7 @@ const translations = {
       subtitle: "Frontend Developer",
       ctaWork: "Check my work",
       ctaContact: "Contact me",
-      emailText: "Scroll down", // Προαιρετικό αν θέλεις να αλλάξεις το email text
+      emailText: "Scroll down", 
       marquee:
         "Available for remote work • Frontend Developer • Based in Wiesbaden • Open to opportunities •",
     },

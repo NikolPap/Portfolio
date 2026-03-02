@@ -25,6 +25,9 @@ const reviewsData = [
 let currentReviewIndex = 0;
 let currentProjectIndex = 0;
 
+/**
+ * Initializes the application and renders all main sections.
+ */
 function init() {
   renderAllContent();
   initializeEventListeners();
@@ -33,6 +36,9 @@ function init() {
   initCursorGlow();
 }
 
+/**
+ * Renders all page sections and initializes dynamic content.
+ */
 function renderAllContent() {
   document.getElementById("hero").innerHTML = getheroTemplate();
   document.getElementById("about").innerHTML = getAboutMeTemplate();
@@ -41,46 +47,67 @@ function renderAllContent() {
   document.getElementById("colleagues").innerHTML = getColleaguesTemplate();
   document.getElementById("contact").innerHTML = getContactTemplate();
   document.getElementById("footer").innerHTML = getFooterTemplate();
-
   updateReviewsDisplay();
   updateLanguageToggles();
 }
 
+/**
+ * Appends hero section content.
+ */
 function renderHero() {
   document.getElementById("hero").innerHTML += getheroTemplate();
 }
 
+/**
+ * Appends about section content.
+ */
 function renderAboutme() {
   document.getElementById("about").innerHTML += getAboutMeTemplate();
 }
 
+/**
+ * Appends skills section content.
+ */
 function renderSkills() {
   document.getElementById("skills").innerHTML += getSkillsTemplate();
 }
 
+/**
+ * Appends projects section content.
+ */
 function renderProjects() {
   document.getElementById("projects").innerHTML += getProjectsTemplate();
 }
 
+/**
+ * Renders contact section if available.
+ */
 function renderContact() {
   const contactSection = document.getElementById("contact");
-  if (contactSection) {
-    contactSection.innerHTML = getContactTemplate();
-  }
+  if (!contactSection) return;
+  contactSection.innerHTML = getContactTemplate();
 }
 
+/**
+ * Renders footer section if available.
+ */
 function renderFooter() {
   const footer = document.getElementById("footer");
-  if (footer) {
-    footer.innerHTML = getFooterTemplate();
-  }
+  if (!footer) return;
+  footer.innerHTML = getFooterTemplate();
 }
 
+/**
+ * Renders colleagues section and updates review display.
+ */
 function renderColleagues() {
   document.getElementById("colleagues").innerHTML = getColleaguesTemplate();
   updateReviewsDisplay();
 }
 
+/**
+ * Moves to the next review in the list.
+ */
 function nextReview() {
   currentReviewIndex++;
   if (currentReviewIndex >= reviewsData.length) {
@@ -89,6 +116,9 @@ function nextReview() {
   updateReviewsDisplay("next");
 }
 
+/**
+ * Moves to the previous review in the list.
+ */
 function prevReview() {
   currentReviewIndex--;
   if (currentReviewIndex < 0) {
@@ -97,57 +127,39 @@ function prevReview() {
   updateReviewsDisplay("prev");
 }
 
+/**
+ * Updates review cards (left, center, right) and pagination dots.
+ * @param {string} [direction]
+ */
 function updateReviewsDisplay(direction) {
   const len = reviewsData.length;
-  const indexCenter = currentReviewIndex;
-  const indexLeft = (currentReviewIndex - 1 + len) % len;
-  const indexRight = (currentReviewIndex + 1) % len;
-  document.getElementById("text-center").innerHTML =
-    reviewsData[indexCenter].text;
-  document.getElementById("author-center").innerHTML =
-    reviewsData[indexCenter].author;
-  document.getElementById("text-left").innerHTML = reviewsData[indexLeft].text;
-  document.getElementById("author-left").innerHTML =
-    reviewsData[indexLeft].author;
-  document.getElementById("text-right").innerHTML =
-    reviewsData[indexRight].text;
-  document.getElementById("author-right").innerHTML =
-    reviewsData[indexRight].author;
-  renderDots(len, indexCenter);
+  const center = currentReviewIndex;
+  const left = (center - 1 + len) % len;
+  const right = (center + 1) % len;
+
+  document.getElementById("text-center").innerHTML = reviewsData[center].text;
+  document.getElementById("author-center").innerHTML = reviewsData[center].author;
+  document.getElementById("text-left").innerHTML = reviewsData[left].text;
+  document.getElementById("author-left").innerHTML = reviewsData[left].author;
+  document.getElementById("text-right").innerHTML = reviewsData[right].text;
+  document.getElementById("author-right").innerHTML = reviewsData[right].author;
+  renderDots(len, center);
 }
 
-function renderContent() {
-  const len = reviewsData.length;
-  const indexCenter = currentReviewIndex;
-  const indexLeft = (currentReviewIndex - 1 + len) % len;
-  const indexRight = (currentReviewIndex + 1) % len;
-
-  document.getElementById("text-center").innerHTML =
-    reviewsData[indexCenter].text;
-  document.getElementById("author-center").innerHTML =
-    reviewsData[indexCenter].author;
-
-  document.getElementById("text-left").innerHTML = reviewsData[indexLeft].text;
-  document.getElementById("author-left").innerHTML =
-    reviewsData[indexLeft].author;
-
-  document.getElementById("text-right").innerHTML =
-    reviewsData[indexRight].text;
-  document.getElementById("author-right").innerHTML =
-    reviewsData[indexRight].author;
-
-  renderDots(len, indexCenter);
-}
-
+/**
+ * Renders review pagination dots.
+ * @param {number} count
+ * @param {number} activeIndex
+ */
 function renderDots(count, activeIndex) {
   const container = document.getElementById("dots-container");
   container.innerHTML = "";
 
   for (let i = 0; i < count; i++) {
     let dotClass = "dot";
-    if (i === activeIndex) {
-      dotClass += " active-dot";
-    }
-    container.innerHTML += `<span class="${dotClass}" onclick="currentReviewIndex = ${i}; updateReviewsDisplay()"></span>`;
+    if (i === activeIndex) dotClass += " active-dot";
+    container.innerHTML +=
+      `<span class="${dotClass}" onclick="currentReviewIndex=${i};updateReviewsDisplay()"></span>`;
   }
 }
+
