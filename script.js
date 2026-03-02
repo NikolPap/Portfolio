@@ -87,14 +87,16 @@ function switchLanguage(lang) {
   currentLang = lang;
   localStorage.setItem("lang", lang);
   document.body.style.overflow = "auto";
-
-  if (document.body.classList.contains("legal-notice-body")) {
+  if (document.getElementById("legal-mainTitle")) {
     renderLegalView();
-    const footer = document.getElementById("footer");
-    if (footer) footer.innerHTML = getFooterTemplate();
+  } else if (document.getElementById("privacy-mainTitle")) {
+    renderPrivacyView();
   } else {
     renderAllContent();
   }
+  const footer = document.getElementById("footer");
+  if (footer) footer.innerHTML = getFooterTemplate();
+
   updateLanguageToggles();
   initializeEventListeners();
 }
@@ -386,4 +388,34 @@ function initCursorGlow() {
       cursorGlow.style.top = e.clientY + "px";
     });
   }
+}
+
+/**
+ * Renders the content for the privacy policy page.
+ */
+function renderPrivacyView() {
+  const t = translations[currentLang].privacy;
+  
+  // Update texts based on IDs
+  const keys = [
+    "mainTitle",
+    "introTitle", "introText",
+    "collectionTitle", "collectionText",
+    "usageTitle", "usageText",
+    "hostingTitle", "hostingText",
+    "contactTitle", "contactText",
+    "rightsTitle", "rightsText"
+  ];
+
+  keys.forEach((key) => {
+    const domEl = document.getElementById(`privacy-${key}`);
+    if (domEl && t[key]) {
+      domEl.innerHTML = t[key];
+    }
+  });
+
+  const dateEl = document.getElementById("privacy-date");
+  if (dateEl) dateEl.innerHTML = t.date;
+
+  updateLegalNavLinks(); 
 }

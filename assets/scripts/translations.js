@@ -76,7 +76,7 @@ const translations = {
       labelMessage: "How can I help you?",
       phMessage: "Hello Nikoleta, I am interested in..",
       privacy:
-        "I have read and agree to the <a href='#' class='privacy-link'>privacy policy</a>.",
+        "I have read and agree to the <a href='privacy-policy.html' class='privacy-link'>privacy policy</a>.",
       btnSend: "Say Hello :)",
       btnSending: "Sending...",
       btnSent: "Message Sent!",
@@ -126,6 +126,29 @@ const translations = {
 
       date: "<strong>Date:</strong> February 2026",
     },
+     privacy: {
+      mainTitle: "Privacy Policy",
+      
+      introTitle: "1. General Information",
+      introText: "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data with which you could be personally identified.",
+      
+      collectionTitle: "2. Data Collection on this Website",
+      collectionText: "Who is responsible for data collection on this website? The data processing on this website is carried out by the website operator. You can find their contact details in the imprint of this website.",
+      
+      usageTitle: "3. How we use your data",
+      usageText: "Part of the data is collected to ensure the error-free provision of the website. Other data may be used to analyze your user behavior or to contact you if you use the contact form.",
+      
+      hostingTitle: "4. Hosting",
+      hostingText: "We host our website with an external provider. The personal data collected on this website is stored on the host's servers. This may include IP addresses, meta and communication data, website accesses, and other data generated via a website.",
+      
+      contactTitle: "5. Contact Form",
+      contactText: "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and in case of follow-up questions. We do not pass on this data without your consent.",
+      
+      rightsTitle: "6. Your Rights",
+      rightsText: "You have the right to receive information about the origin, recipient, and purpose of your stored personal data free of charge at any time. You also have the right to request the correction or deletion of this data.",
+      
+      date: "<strong>Date:</strong> February 2026"
+    }
   },
   de: {
     nav: {
@@ -191,7 +214,7 @@ const translations = {
       labelMessage: "Wie kann ich Ihnen helfen?",
       phMessage: "Hallo Nikoleta, ich interessiere mich für..",
       privacy:
-        "Ich habe die <a href='#' class='privacy-link'>Datenschutzrichtlinie</a> gelesen und stimme zu.",
+        "Ich habe die <a href='privacy-policy.html' class='privacy-link'>Datenschutzrichtlinie</a> gelesen und stimme zu.",
       btnSend: "Sag Hallo:)",
       btnSending: "Senden...",
       btnSent: "Nachricht gesendet!",
@@ -241,5 +264,28 @@ const translations = {
 
       date: "<strong>Datum:</strong> Februar 2026",
     },
+    privacy: {
+      mainTitle: "Datenschutz Hinweise",
+      
+      introTitle: "1. Allgemeine Hinweise",
+      introText: "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.",
+      
+      collectionTitle: "2. Datenerfassung auf dieser Website",
+      collectionText: "Wer ist verantwortlich für die Datenerfassung auf dieser Website? Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.",
+      
+      usageTitle: "3. Wie wir Ihre Daten nutzen",
+      usageText: "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden oder um Sie zu kontaktieren, wenn Sie das Kontaktformular nutzen.",
+      
+      hostingTitle: "4. Hosting",
+      hostingText: "Wir hosten unsere Website bei einem externen Anbieter. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Meta- und Kommunikationsdaten, Webseitenzugriffe und sonstige Daten, die über eine Webseite generiert werden, handeln.",
+      
+      contactTitle: "5. Kontaktformular",
+      contactText: "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
+      
+      rightsTitle: "6. Ihre Rechte",
+      rightsText: "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen.",
+      
+      date: "<strong>Datum:</strong> Februar 2026"
+    }
   },
 };

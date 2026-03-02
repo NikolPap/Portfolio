@@ -19,7 +19,7 @@ const projects = [
     image: "assets/img/Frame 372.png",
     githubLink: "https://github.com/NikolPap/Join.git",
     
-    liveLink: "#",
+    liveLink: "https://nikoletapapalazarou.de/Join/index.html",
   },
   {
     title: "El Pollo Loco",
@@ -34,8 +34,8 @@ const projects = [
       { name: "CSS", icon: "./assets/img/Vector.png" },
     ],
     image: "assets/img/Frame 372 (1).png",
-    githubLink: "#",
-    liveLink: "#",
+    githubLink: "https://github.com/NikolPap/El-Pollo-Loco.git",
+    liveLink: "https://nikoletapapalazarou.de/elPolloLoco/index.html",
   },
   {
     title: "DA Bubble",

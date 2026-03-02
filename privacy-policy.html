@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/img/smallLogo.png" />
+    <link rel="stylesheet" href="./assets/styles/fonts.css" />
+    <link rel="stylesheet" href="./assets/styles/animations.css" />
+    <link rel="stylesheet" href="./assets/styles/hero.css" />
+    <link rel="stylesheet" href="./assets/styles/footer.css" />
+    <link rel="stylesheet" href="./assets/styles/media.css" />
+    <link rel="stylesheet" href="./assets/styles/legal.css" /> <!-- Reuse Legal CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="./assets/scripts/translations.js"></script>
+
+    <script src="./assets/scripts/getFooter.js"></script>
+    <script src="./assets/scripts/heroTemplate.js"></script>
+    <script src="script.js"></script>
+
+    <title>Privacy Policy - Nikoleta Papalazarou</title>
+  </head>
+
+  <!-- Reusing legal-notice-body class for the background image -->
+  <body class="legal-notice-body" onload="initPrivacy()">
+    <div id="cursor-glow"></div>
+    <section style="height: auto; padding-bottom: 100px">
+      <nav class="navbar">
+        <div class="navigation">
+          <div class="nav-left desktop-nav">
+            <div class="lang-switch" id="lang-toggle-desktop">
+              <div class="toggle-bg"></div>
+              <span class="lang-btn active" data-lang="en">EN</span>
+              <span class="lang-btn" data-lang="de">DE</span>
+            </div>
+            <div>
+              <ul class="nav-links">
+                <li><a href="index.html#about">About me</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="logo">
+            <a href="index.html">
+                <img id="logo-icon" src="./assets/img/logo.png" alt="a logo icon" />
+            </a>
+          </div>
+          <div class="hamburger" id="hamburger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+      <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-content">
+          <ul class="mobile-nav-links nav-links">
+            <li><a href="index.html#about" onclick="closeMobileMenu()">About me</a></li>
+            <li><a href="index.html#skills" onclick="closeMobileMenu()">Skills</a></li>
+            <li><a href="index.html#projects" onclick="closeMobileMenu()">Projects</a></li>
+          </ul>
+
+          <div class="lang-switch mobile-lang-switch" id="lang-toggle-mobile">
+            <div class="toggle-bg"></div>
+            <span class="lang-btn active" data-lang="en">EN</span>
+            <span class="lang-btn" data-lang="de">DE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section - Same structure as Legal Notice -->
+    <section class="legal-section">
+      <div class="legal-container">
+        <h1 id="privacy-mainTitle">Privacy Policy</h1>
+
+        <h3 id="privacy-introTitle">General Information</h3>
+        <p id="privacy-introText">Loading...</p>
+
+        <h3 id="privacy-collectionTitle">Data Collection</h3>
+        <p id="privacy-collectionText">Loading...</p>
+
+        <h3 id="privacy-usageTitle">Use of Data</h3>
+        <p id="privacy-usageText">Loading...</p>
+
+        <h3 id="privacy-hostingTitle">Hosting</h3>
+        <p id="privacy-hostingText">Loading...</p>
+
+        <h3 id="privacy-contactTitle">Contact Form</h3>
+        <p id="privacy-contactText">Loading...</p>
+
+        <h3 id="privacy-rightsTitle">Your Rights</h3>
+        <p id="privacy-rightsText">Loading...</p>
+
+        <p id="privacy-date"><strong>Date:</strong> February 2026</p>
+      </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script>
+      function initPrivacy() {
+        if (typeof currentLang === "undefined") {
+          window.currentLang = localStorage.getItem("lang") || "en";
+        }
+        // Render Footer
+        document.getElementById("footer").innerHTML = getFooterTemplate();
+        // Render Privacy Content
+        renderPrivacyView();
+        // UI Updates
+        updateLanguageToggles();
+        if (typeof initializeEventListeners === "function") {
+          initializeEventListeners();
+        }
+        initCursorGlow();
+      }
+    </script>
+  </body>
+</html>
