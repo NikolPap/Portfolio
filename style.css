@@ -16,13 +16,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-primary);
   background-color: var(--color-bg);
   color: var(--color-text);
-  overflow-x: hidden;
-  scroll-behavior: smooth;
   font-size: 18px;
+  width: 100%;
+  max-width: 100vw;
 }
 
 h1 {
@@ -58,7 +62,10 @@ h2 {
   .nav-left.desktop-nav {
     display: none;
   }
-
+  .side-card {
+    height: 460px;
+  }
+  
   .logo {
     order: 1;
     height: 48px;
@@ -291,15 +298,17 @@ h2 {
   }
 
   .modal-right {
-    padding: 10px;
+    padding: 30px 25px;
   }
 
   .close-modal-btn {
-    right: 16px;
+    right: 25px;
+    top: 25px;
   }
 
   .modal-left {
-    padding: 5px;
+    padding: 30px 25px;
+    padding-bottom: 80px;
   }
 
   .project-number {
@@ -307,6 +316,7 @@ h2 {
   }
 
   .project-title {
+    margin-top: 20px;
     margin-bottom: 10px;
   }
 
@@ -339,20 +349,21 @@ h2 {
   #cursor-glow {
     display: none;
   }
-
 }
 
 #cursor-glow {
-    position: fixed;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(61, 207, 182, 0.25) 0%, rgba(61, 207, 182, 0) 70%);
-    border-radius: 50%;
-    pointer-events: none; 
-    transform: translate(-50%, -50%); 
-    z-index: 9999; 
-    mix-blend-mode: screen;
-    transition: transform 0.1s ease-out; 
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(61, 207, 182, 0.25) 0%,
+    rgba(61, 207, 182, 0) 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  mix-blend-mode: screen;
+  transition: transform 0.1s ease-out;
 }
-
-

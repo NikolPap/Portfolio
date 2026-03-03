@@ -11,6 +11,9 @@
   background-image: url("../img/12.\ Skill\ set\ Background.png");
   background-position: center;
   background-size: cover;
+  width: 100%;       
+  min-height: 85vh;
+  box-sizing: border-box; 
 }
 
 .legal-notice-ul {

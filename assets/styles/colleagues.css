@@ -74,6 +74,7 @@
 }
 
 .side-card {
+  height: 270px;
   border: 1px solid var(--color-primary);
   color: rgba(255, 255, 255, 0.5);
   z-index: 1;

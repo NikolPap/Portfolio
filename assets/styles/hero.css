@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden; 
 }
 
 .hero-content {
@@ -358,7 +359,7 @@
 }
 
 .marquee-content span {
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 .sidebars {

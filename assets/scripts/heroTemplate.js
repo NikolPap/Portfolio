@@ -85,8 +85,7 @@ function getheroTemplate() {
 
     <div class="marquee">
       <div class="marquee-content">
-        <span>${t.hero.marquee}</span>
-        <span>${t.hero.marquee}</span>
+        <span>${t.hero.marquee}</span><span>${t.hero.marquee}</span>
       </div>
     </div>
   `;

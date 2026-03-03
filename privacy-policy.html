@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./assets/styles/animations.css" />
     <link rel="stylesheet" href="./assets/styles/hero.css" />
     <link rel="stylesheet" href="./assets/styles/footer.css" />
-    <link rel="stylesheet" href="./assets/styles/media.css" />
-    <link rel="stylesheet" href="./assets/styles/legal.css" /> <!-- Reuse Legal CSS -->
+    <link rel="stylesheet" href="./assets/styles/legal.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/styles/media.css" />
     <script src="./assets/scripts/translations.js"></script>
 
     <script src="./assets/scripts/getFooter.js"></script>
@@ -19,8 +19,6 @@
 
     <title>Privacy Policy - Nikoleta Papalazarou</title>
   </head>
-
-  <!-- Reusing legal-notice-body class for the background image -->
   <body class="legal-notice-body" onload="initPrivacy()">
     <div id="cursor-glow"></div>
     <section style="height: auto; padding-bottom: 100px">
@@ -42,7 +40,11 @@
           </div>
           <div class="logo">
             <a href="index.html">
-                <img id="logo-icon" src="./assets/img/logo.png" alt="a logo icon" />
+              <img
+                id="logo-icon"
+                src="./assets/img/logo.png"
+                alt="a logo icon"
+              />
             </a>
           </div>
           <div class="hamburger" id="hamburger-btn">
@@ -55,9 +57,19 @@
       <div class="mobile-menu-overlay" id="mobile-menu">
         <div class="mobile-menu-content">
           <ul class="mobile-nav-links nav-links">
-            <li><a href="index.html#about" onclick="closeMobileMenu()">About me</a></li>
-            <li><a href="index.html#skills" onclick="closeMobileMenu()">Skills</a></li>
-            <li><a href="index.html#projects" onclick="closeMobileMenu()">Projects</a></li>
+            <li>
+              <a href="index.html#about" onclick="closeMobileMenu()"
+                >About me</a
+              >
+            </li>
+            <li>
+              <a href="index.html#skills" onclick="closeMobileMenu()">Skills</a>
+            </li>
+            <li>
+              <a href="index.html#projects" onclick="closeMobileMenu()"
+                >Projects</a
+              >
+            </li>
           </ul>
 
           <div class="lang-switch mobile-lang-switch" id="lang-toggle-mobile">

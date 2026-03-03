@@ -95,6 +95,7 @@ function openProjectDialog(index) {
   }
 
   modal.showModal();
+  document.body.style.overflow = "hidden"; 
 }
 
 /**
@@ -108,8 +109,8 @@ function closeModal() {
   }
 
   modal.close();
+  document.body.style.overflow = "";
 }
-
 /**
  * Moves to the next project in the array and renders its modal content.
  * Wraps around to the first project if at the end of the list.

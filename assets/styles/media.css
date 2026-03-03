@@ -29,8 +29,6 @@
     right: -310px;
   }
 
-
-
   .email {
     display: none;
   }
@@ -53,6 +51,10 @@
     width: 59%;
     padding: 21px 20px;
     height: 240px;
+  }
+
+  .marquee-content {
+    animation: scroll 5s linear infinite;
   }
 
   .navbar {
@@ -100,6 +102,10 @@
     gap: 7px;
   }
 
+  .side-card {
+    height: 565px;
+  }
+
   .review-card {
     max-width: 301px;
   }
@@ -126,6 +132,14 @@
 
   .active-card {
     height: 565px;
+  }
+
+  .legal-section h1 {
+    font-size: 40px;
+  }
+
+  .legal-section {
+    padding: 80px 10px;
   }
 }
 
