@@ -32,16 +32,16 @@ function getSkillsTemplate() {
 
         <div class="skills-right">
             <div class="icons-grid">
-                <div class="skill-item"><img src="./assets/img/Property 1=HTML.png" alt="html"><span>HTML</span></div>
-                <div class="skill-item"><img src="./assets/img/Property 1=CSS.png" alt="css"><span>CSS</span></div>
-                <div class="skill-item"><img src="./assets/img/Property 1=JavaScript.png" alt="js"><span>JavaScript</span></div>
-                <div class="skill-item"><img src="./assets/img/Property 1=Material Design.png" alt="material"><span>Material Design</span></div>
-                <div class="skill-item"><img src="./assets/img/Property 1=TypeScript.png" alt="ts"><span>TypeScript</span></div>
-                <div class="skill-item"><img src="./assets/img/Property 1=Angular.png" alt="angular"><span>Angular</span></div>
-                <div class="skill-item"><img src="./assets/img/Property 1=Firebase.png" alt="firebase"><span>Firebase</span></div>
-                <div class="skill-item"><img src="./assets/img/Property 1=Git.png" alt="git"><span>Git</span></div>
-                <div class="skill-item"><img src="./assets/img/Property 1=Rest-Api.png" alt="api"><span>REST-API</span></div>
-                <div class="skill-item"><img src="./assets/img/Property 1=Scrum.png" alt="scrum"><span>Scrum</span></div>
+                <div class="skill-item"><img src="./assets/img/Property 1=HTML.svg" alt="html"><span>HTML</span></div>
+                <div class="skill-item"><img src="./assets/img/Property 1=CSS.svg" alt="css"><span>CSS</span></div>
+                <div class="skill-item"><img src="./assets/img/Property 1=JavaScript.svg" alt="js"><span>JavaScript</span></div>
+                <div class="skill-item"><img src="./assets/img/Property 1=Material Design.svg" alt="material"><span>Material Design</span></div>
+                <div class="skill-item"><img src="./assets/img/Property 1=TypeScript.svg" alt="ts"><span>TypeScript</span></div>
+                <div class="skill-item"><img src="./assets/img/Property 1=Angular.svg" alt="angular"><span>Angular</span></div>
+                <div class="skill-item"><img src="./assets/img/Property 1=Firebase.svg" alt="firebase"><span>Firebase</span></div>
+                <div class="skill-item"><img src="./assets/img/Property 1=Git.svg" alt="git"><span>Git</span></div>
+                <div class="skill-item"><img src="./assets/img/Property 1=Rest-Api.svg" alt="api"><span>REST-API</span></div>
+                <div class="skill-item"><img src="./assets/img/Property 1=Scrum.svg" alt="scrum"><span>Scrum</span></div>
                 <div class="skill-item growth-mindset">
                     <div class="icon-wrapper">
                         <img src="./assets/img/Property 1=GrowthMindset.png" class="base-icon" alt="Growth Mindset">

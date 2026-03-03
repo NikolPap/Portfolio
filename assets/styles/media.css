@@ -10,7 +10,7 @@
 
 @media (max-width: 1183px) {
   .icons-grid {
-    grid-template-columns: repeat(3, 70px);
+    grid-template-columns: repeat(3, 90px);
   }
 
   .skills-glass-card {
@@ -145,7 +145,7 @@
 
 @media (max-width: 380px) {
   .icons-grid {
-    grid-template-columns: repeat(3, 50px);
+    grid-template-columns: repeat(3, 60px);
   }
 
   .line {

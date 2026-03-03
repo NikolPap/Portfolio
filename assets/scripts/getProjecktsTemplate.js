@@ -43,19 +43,19 @@ function getProjectsTemplate() {
                     <img src="assets/img/ElPolloLoco.png" alt="El Pollo Loco">
                 </div>
             </div>
-
-            <div class="project-row">
-                <div class="project-info">
-                    <h3 class="project-name">DA Bubble<img src="assets/img/arrow_outward.png" class="arrow-icon" alt=""></h3>
-                </div>
-                <div class="project-links">
-                      <p class="project-tech">Angular <span class="linear">|</span> Firebase <span class="linear">|</span> Typescript</p>
-                </div>
-                <div class="project-image-preview">
-                    <img src="assets/img/DaBubble.png" alt="DA Bubble">
-                </div>
-            </div>
         </div>
     </div>
     `;
 }
+
+//  <div class="project-row">
+//                 <div class="project-info">
+//                     <h3 class="project-name">DA Bubble<img src="assets/img/arrow_outward.png" class="arrow-icon" alt=""></h3>
+//                 </div>
+//                 <div class="project-links">
+//                       <p class="project-tech">Angular <span class="linear">|</span> Firebase <span class="linear">|</span> Typescript</p>
+//                 </div>
+//                 <div class="project-image-preview">
+//                     <img src="assets/img/DaBubble.png" alt="DA Bubble">
+//                 </div>
+//             </div>

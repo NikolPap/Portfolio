@@ -17,7 +17,7 @@ const projects = [
       { name: "TypeScript", icon: "assets/img/Property 1=TypeScript (1).png" },
     ],
     image: "assets/img/Frame 372.png",
-    githubLink: "https://github.com/NikolPap/Join.git",
+    githubLink: "https://github.com/IcksDeh/Join.git",
     
     liveLink: "https://nikoletapapalazarou.de/Join/index.html",
   },
@@ -36,23 +36,23 @@ const projects = [
     image: "assets/img/Frame 372 (1).png",
     githubLink: "https://github.com/NikolPap/El-Pollo-Loco.git",
     liveLink: "https://nikoletapapalazarou.de/elPolloLoco/index.html",
-  },
-  {
-    title: "DA Bubble",
-    number: "03",
-    description: {
-      en: "A chat messenger application similar to Slack. Features real-time communication, channels, and threads.",
-      de: "Eine Chat-Messenger-Anwendung ähnlich wie Slack. Bietet Echtzeitkommunikation, Kanäle und Threads.",
-    },
-    techStack: [
-      { name: "Angular", icon: "./assets/img/Angular.png" },
-      { name: "Firebase", icon: "./assets/img/Property 1=Firebase (1).png" },
-      { name: "TypeScript", icon: "assets/img/Property 1=TypeScript (1).png" },
-    ],
-    image: "assets/img/Frame 372 (2).png",
-    githubLink: "#",
-    liveLink: "#",
-  },
+  }
+  // {
+  //   title: "DA Bubble",
+  //   number: "03",
+  //   description: {
+  //     en: "A chat messenger application similar to Slack. Features real-time communication, channels, and threads.",
+  //     de: "Eine Chat-Messenger-Anwendung ähnlich wie Slack. Bietet Echtzeitkommunikation, Kanäle und Threads.",
+  //   },
+  //   techStack: [
+  //     { name: "Angular", icon: "./assets/img/Angular.png" },
+  //     { name: "Firebase", icon: "./assets/img/Property 1=Firebase (1).png" },
+  //     { name: "TypeScript", icon: "assets/img/Property 1=TypeScript (1).png" },
+  //   ],
+  //   image: "assets/img/Frame 372 (2).png",
+  //   githubLink: "#",
+  //   liveLink: "#",
+  // },
 ];
 
 /**
