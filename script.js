@@ -304,7 +304,6 @@ function sendContactEmail(event) {
 function updateButtonLoading(btn, isLoading) {
   if (isLoading) {
     btn.disabled = true;
-    btn.innerHTML = "<span>Sending...</span>";
   }
 }
 
@@ -333,12 +332,11 @@ function submitFormData(data, btn) {
 function handleMailSuccess(data, btn) {
   if (data.success) {
     clearFormFields();
-    btn.innerHTML = "<span>Message Sent!</span>";
-    btn.style.backgroundColor = "#3dcfb6";
-    btn.style.color = "#1c1c1c";
+    showToast("Thank you! Message sent successfully.", "success");
   } else {
     throw new Error(data.error || "Submission failed");
   }
+  resetFormButton(btn);
 }
 
 /**
@@ -361,9 +359,9 @@ function clearFormFields() {
  */
 function handleMailError(error, btn) {
   console.error("Error:", error);
-  btn.innerHTML = "<span>Error! Try again.</span>";
-  btn.style.backgroundColor = "red";
-  btn.style.color = "white";
+  showToast("Oops! Something went wrong. Please try again.", "error");
+  
+  resetFormButton(btn);
 }
 
 /**
@@ -371,9 +369,10 @@ function handleMailError(error, btn) {
  * @param {HTMLElement} btn - The button element.
  */
 function resetFormButton(btn) {
-  btn.innerHTML = "<span>Say Hello :)</span>";
-  btn.style.backgroundColor = "#1c1c1c";
-  btn.style.color = "#777";
+  const t = translations[currentLang].contact;
+  btn.innerHTML = `<span>${t.btnSend}</span>`;
+  btn.style.backgroundColor = ""; 
+  btn.style.color = ""; 
   checkFormValidity();
 }
 
@@ -420,3 +419,18 @@ function renderPrivacyView() {
   updateLegalNavLinks(); 
 }
 
+/**
+ * Shows a toast message centered on the screen.
+ * @param {string} message - The text to display.
+ * @param {string} type - 'success' or 'error'.
+ */
+function showToast(message, type) {
+  const toast = document.getElementById("toast");
+  toast.className = "toast show " + type; // Reset classes + add type
+  toast.innerText = message;
+
+  setTimeout(function() {
+    toast.className = toast.className.replace("show", "");
+    setTimeout(() => { toast.className = "toast"; }, 500); 
+  }, 4000);
+}

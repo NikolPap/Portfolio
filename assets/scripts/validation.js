@@ -20,15 +20,16 @@ function validateName() {
 function validateEmail() {
     const input = document.getElementById("email");
     const errorMsg = document.getElementById("emailError");
-    const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
-    if (input.value.trim() === "" || !pattern.test(input.value)) {
+    const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (input.value.trim() === "" || !pattern.test(input.value) || input.value.includes('..')) {
         errorMsg.innerText = input.value.trim() === "" 
             ? "Hoppla! Your email is required" 
             : "Please enter a valid email address";
         input.classList.add("has-error");
         return false;
     }
+    input.classList.remove("has-error");
+    errorMsg.innerText = ""; 
     return true;
 }
 
@@ -91,7 +92,11 @@ function isFormValidWithoutUIFeedback() {
     const email = document.getElementById("email").value.trim();
     const msg = document.getElementById("message").value.trim();
     const privacy = document.getElementById("privacyCheckbox").checked;
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     
-    return name !== "" && emailPattern.test(email) && msg !== "" && privacy;
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    
+    // Προσθέσαμε το !email.includes('..') και εδώ
+    const isEmailValid = emailPattern.test(email) && !email.includes('..');
+    
+    return name !== "" && isEmailValid && msg !== "" && privacy;
 }

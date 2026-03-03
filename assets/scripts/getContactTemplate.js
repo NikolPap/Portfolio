@@ -31,7 +31,7 @@ function getContactTemplate() {
                 
                 <div class="input-group">
                     <label class="contact-label" for="name">${t.labelName}</label>
-                    <input type="text" id="name" placeholder="${t.phName}" 
+                    <input autocomplete="off" type="text" id="name" placeholder="${t.phName}" 
                            onblur="validateName()" 
                            onfocus="resetError(this)" 
                            onkeyup="checkFormValidity()" required>
@@ -40,7 +40,7 @@ function getContactTemplate() {
 
                 <div class="input-group">
                     <label class="contact-label" for="email">${t.labelEmail}</label>
-                    <input type="email" id="email" placeholder="${t.phEmail}" 
+                    <input autocomplete="off" type="email" id="email" placeholder="${t.phEmail}" 
                            onblur="validateEmail()" 
                            onfocus="resetError(this)" 
                            onkeyup="checkFormValidity()" required>
@@ -48,7 +48,7 @@ function getContactTemplate() {
                 </div>
                 <div class="input-group">
                      <label class="contact-label" for="message">${t.labelMessage}</label>
-                    <textarea id="message" rows="1" placeholder="${t.phMessage}" 
+                    <textarea autocomplete="off" id="message" rows="1" placeholder="${t.phMessage}" 
                               onblur="validateMessage()" 
                               onfocus="resetError(this)" 
                               onkeyup="checkFormValidity()" required></textarea>

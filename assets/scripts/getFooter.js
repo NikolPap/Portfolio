@@ -15,7 +15,7 @@ function getFooterTemplate() {
     <div class="footer-wrapper">
         <div class="footer-container">
             <div class="footer-left">
-                <img src="./assets/img/logo.png" alt="Logo" class="footer-logo">
+                <a href="#hero"><img src="./assets/img/logo.png" alt="Logo" class="footer-logo"></a>
                 <span class="footer-span">${t.role}</span>
             </div>
             

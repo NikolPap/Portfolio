@@ -367,3 +367,44 @@ h2 {
   mix-blend-mode: screen;
   transition: transform 0.1s ease-out;
 }
+
+
+/* Toast Notification Styles */
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  position: fixed;
+  z-index: 10000; /* Πάνω από όλα */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Κεντράρισμα */
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Class για εμφάνιση */
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Χρώματα ανάλογα με το αποτέλεσμα */
+.toast.success {
+  background-color: var(--color-primary); /* #3dcfb6 */
+  color: var(--color-bg); /* #1c1c1c */
+  border: 2px solid var(--color-primary);
+}
+
+.toast.error {
+  background-color: #ff4d4d;
+  color: white;
+  border: 2px solid #ff4d4d;
+}
