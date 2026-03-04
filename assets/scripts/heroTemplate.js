@@ -84,9 +84,22 @@ function getheroTemplate() {
     </div>
 
     <div class="marquee">
-      <div class="marquee-content">
-        <span>${t.hero.marquee}</span><span>${t.hero.marquee}</span>
-      </div>
+  <div class="marquee-content">
+    <!-- Erste exakt identische Hälfte -->
+    <div class="marquee-half">
+      <span>${t.hero.marquee}</span>
+      <span>${t.hero.marquee}</span>
+      <span>${t.hero.marquee}</span>
+      <span>${t.hero.marquee}</span>
     </div>
+    <!-- Zweite exakt identische Hälfte -->
+    <div class="marquee-half">
+      <span>${t.hero.marquee}</span>
+      <span>${t.hero.marquee}</span>
+      <span>${t.hero.marquee}</span>
+      <span>${t.hero.marquee}</span>
+    </div>
+  </div>
+</div>
   `;
 }

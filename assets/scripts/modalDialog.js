@@ -17,7 +17,7 @@ const projects = [
       { name: "TypeScript", icon: "assets/img/Property 1=TypeScript (1).png" },
     ],
     image: "assets/img/Frame 372.png",
-    githubLink: "https://github.com/IcksDeh/Join.git",
+    githubLink: "https://github.com/NikolPap/join1.git",
     
     liveLink: "https://nikoletapapalazarou.de/Join/index.html",
   },

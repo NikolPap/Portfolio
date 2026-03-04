@@ -350,16 +350,19 @@
 
 .marquee-content {
   display: flex;
+  width: max-content;
   font-family: var(--font-secondary);
   white-space: nowrap;
-  animation: scroll 20s linear infinite;
+  animation: scroll 24s linear infinite;
   font-size: 32px;
   font-weight: 400;
   color: var(--color-primary);
 }
 
-.marquee-content span {
-  padding: 0 5px;
+.marquee-half {
+  display: flex;
+  gap: 30px; 
+  padding-right: 30px; 
 }
 
 .sidebars {

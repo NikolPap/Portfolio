@@ -53,10 +53,6 @@
     height: 240px;
   }
 
-  .marquee-content {
-    animation: scroll 5s linear infinite;
-  }
-
   .navbar {
     padding: 20px 39px;
   }
