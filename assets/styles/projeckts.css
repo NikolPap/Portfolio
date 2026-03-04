@@ -14,7 +14,9 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding-top: 40px;
+  padding-bottom: 80px;
 }
+
 .projects-pre-title {
   color: var(--color-primary);
   font-family: var(--font-primary);

@@ -87,6 +87,8 @@ function switchLanguage(lang) {
   currentLang = lang;
   localStorage.setItem("lang", lang);
   document.body.style.overflow = "auto";
+  closeMobileMenu(); 
+
   if (document.getElementById("legal-mainTitle")) {
     renderLegalView();
   } else if (document.getElementById("privacy-mainTitle")) {

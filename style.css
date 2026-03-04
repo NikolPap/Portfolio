@@ -138,6 +138,10 @@ h2 {
     gap: 30px;
   }
 
+  .colleagues-container {
+    padding: 0 20px;
+  }
+  
   .mobile-lang-switch {
     transform: scale(1.2);
   }

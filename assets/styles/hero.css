@@ -89,14 +89,9 @@
     opacity 0.2s ease;
 }
 
-.nav-links a:hover::after,
-.nav-links a.active::after {
+.nav-links a:hover::after {
   opacity: 1;
   transform: translateX(-50%) scale(1);
-}
-
-.nav-links a.active {
-  color: var(--color-primary);
 }
 
 .lang-switch-container {
@@ -175,15 +170,15 @@
 
 .hero-wrapper {
   position: absolute;
-  top: 0;
+  top: 50%; /* Αλλαγή εδώ */
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%); /* Αλλαγή εδώ για να κεντράρεται και κάθετα */
   width: 100%;
   max-width: 1440px;
   height: 100%;
+  max-height: 900px; /* Σταματάει τα sidebars αν η οθόνη είναι μεγαλύτερη από 900px σε ύψος */
   pointer-events: none;
 }
-
 .email {
   writing-mode: vertical-rl;
   font-family: var(--font-secondary);
