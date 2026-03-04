@@ -144,6 +144,10 @@
     grid-template-columns: repeat(3, 60px);
   }
 
+  .sidebar-right {
+    right: 4px;
+  }
+
   .line {
     height: 110px;
   }
@@ -182,9 +186,8 @@
   }
 }
 
-
 @media (min-height: 900px) {
   .marquee {
-    bottom: calc(50% - 400px); 
+    bottom: calc(50% - 400px);
   }
 }
