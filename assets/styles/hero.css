@@ -170,13 +170,13 @@
 
 .hero-wrapper {
   position: absolute;
-  top: 50%; /* Αλλαγή εδώ */
+  top: 50%; 
   left: 50%;
-  transform: translate(-50%, -50%); /* Αλλαγή εδώ για να κεντράρεται και κάθετα */
+  transform: translate(-50%, -50%);
   width: 100%;
   max-width: 1440px;
   height: 100%;
-  max-height: 900px; /* Σταματάει τα sidebars αν η οθόνη είναι μεγαλύτερη από 900px σε ύψος */
+  max-height: 900px; 
   pointer-events: none;
 }
 .email {
