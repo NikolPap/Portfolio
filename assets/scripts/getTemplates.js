@@ -1,10 +1,10 @@
 const reviewsData = [
   {
     text: {
-      en: "Lukas has proven to be a reliable group partner. His technical skills and proactive approach were crucial to the success of our project.",
-      de: "Lukas hat sich als zuverlässiger Gruppenpartner erwiesen. Seine technischen Fähigkeiten und sein proaktiver Ansatz waren entscheidend für den Erfolg unseres Projekts.",
+      en: "Nikoleta was a valuable asset to the team, combining a rapid grasp of complex concepts with an efficient, high-quality coding style. She stood out for her proactive problem-solving, clean code, and dedication to the group’s progress. Her methodical approach to testing and debugging significantly enhanced the project's stability, making her a reliable and highly competent collaborator.",
+      de: "Nikoleta war eine wertvolle Bereicherung für das Team und überzeugte durch ihre schnelle Auffassungsgabe sowie ihren effizienten, hochwertigen Programmierstil. Sie zeichnete sich durch proaktive Problemlösung, sauberen Code und großes Engagement für den gemeinsamen Fortschritt aus. Durch ihre strukturierte Arbeitsweise im Testing und Debugging trug sie maßgeblich zur Stabilität des Projekts bei und war eine stets zuverlässige Kollegin.",
     },
-    author: "H.Janisch - Team Partner",
+    author: "A.Müller-Team Partner",
   },
   {
     text: {
@@ -15,8 +15,8 @@ const reviewsData = [
   },
   {
     text: {
-      en: "He is a very helpful colleague who is always there for you. His efficient way of working is inspiring.",
-      de: "Er ist ein sehr hilfsbereiter Kollege, der immer für einen da ist. Seine effiziente Arbeitsweise ist inspirierend.",
+      en: "She is a very helpful colleague who is always there for you. His efficient way of working is inspiring.",
+      de: "Sie ist ein sehr hilfsbereiter Kollege, der immer für einen da ist. Seine effiziente Arbeitsweise ist inspirierend.",
     },
     author: "T.Schulz - Frontend Developer",
   },
